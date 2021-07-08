@@ -1,0 +1,68 @@
+.woocommerce span.onsale {
+  min-width: 0;
+  min-height: 0;
+  height: 63px;
+  width: 63px;
+  top: 10px;
+  left: 10px;
+  @extend %primary-bg-color;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  @include d-flex();
+  @include align-items-center();
+  @include justify-content-center();
+
+}
+
+.woocommerce ul.products li.product .onsale {
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  right: auto;
+}
+
+
+
+.g5shop__product-flash {
+  width: 63px;
+  height: 63px;
+  text-align: center;
+  @extend %primary-color;
+  @include d-flex();
+  @include align-items-center();
+  @include justify-content-center();
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  span {
+    color: #fff;
+  }
+
+  + .g5shop__product-flash {
+    margin-top: 5px;
+  }
+}
+
+.porus__icon-sale {
+  fill: currentColor;
+  fill-rule: evenodd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+
+.on-featured{
+  color: #f26c4f !important;
+}
+
+.on-new {
+  color: #ffbb00 !important;
+}

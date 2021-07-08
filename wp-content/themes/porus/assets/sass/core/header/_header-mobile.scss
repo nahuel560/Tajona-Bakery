@@ -1,0 +1,22 @@
+.g5core-menu-mobile {
+  .main-menu {
+    .menu-item {
+      > a {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+      }
+    }
+
+
+    .sub-menu {
+      .menu-item > a {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+    }
+
+  }
+}

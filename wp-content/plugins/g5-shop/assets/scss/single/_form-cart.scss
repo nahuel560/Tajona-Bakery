@@ -1,0 +1,65 @@
+.woocommerce div.product form.cart {
+  margin-bottom: 1.5rem;
+  table {
+    margin-bottom: 1.5rem;
+  }
+
+  table.variations  {
+    td,
+    th {
+        vertical-align: middle;
+    }
+
+    td.label {
+      width: 30%;
+      label {
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+    .reset_variations {
+      color: inherit;
+    }
+
+  }
+
+  .single_add_to_cart_button {
+    margin: 5px 10px 5px 0;
+  }
+
+
+
+  table.group_table {
+    td {
+      padding: 0.5rem 0;
+      vertical-align: middle;
+    }
+    td:first-child {
+      width: 250px;
+      text-align: left;
+    }
+
+    td.woocommerce-grouped-product-list-item__label {
+      label {
+        margin: 0;
+      }
+    }
+
+    td.woocommerce-grouped-product-list-item__price {
+      ins {
+        background: transparent;
+      }
+    }
+
+    .g5shop__quantity {
+      margin: 0;
+      padding: 0;
+      .stock-status,
+      label {
+        display: none;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,67 @@
+.yith-wcwl-share i,
+.yith-wcwl-icon {
+	font: normal normal normal 14px/1 FontAwesome !important;
+}
+
+
+.woocommerce .wishlist_table .product-add-to-cart a.button {
+	display: inline-block !important;
+	margin-bottom: 0 !important;
+	padding: 0 2.5rem !important;
+	line-height: 3rem !important;
+}
+
+.woocommerce table.wishlist_table {
+	font-size: 100%;
+	.product-stock-status span.wishlist-in-stock {
+		@extend %heading-color;
+	}
+
+	tr td,
+	tr th.product-checkbox,
+	tr th.wishlist-delete {
+		text-align: left;
+	}
+}
+
+.wishlist_table.mobile {
+	padding: 0;
+	li {
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.item-wrapper {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.item-details {
+			h3 {
+				font-size: 16px;
+			}
+		}
+
+		.item-details table.item-details-table,
+		table.additional-info {
+			td {
+				font-size: 1em;
+			}
+
+			td.label {
+				font-weight: 500;
+			}
+			td.value {
+				@extend %heading-color;
+				font-weight: 500;
+			}
+		}
+
+		.product-add-to-cart a.button {
+			width: 100%;
+		}
+	}
+
+
+}

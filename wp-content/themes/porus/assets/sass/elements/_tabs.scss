@@ -1,0 +1,249 @@
+.wpb-js-composer.wpb-js-composer .vc_tta.vc_general {
+  .vc_tta-tab>a,
+  .vc_tta-panel-title > a {
+    @extend %font-body;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+  }
+}
+
+
+.wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-01 {
+  .vc_tta-tabs-list {
+    @include d-flex();
+  }
+
+  .vc_tta-tab {
+    width: 100%;
+    > a {
+      border-style: dotted;
+      @extend %primary-border-color;
+      @include border-radius(30px);
+      padding-top: 10.5px;
+      padding-bottom: 10.5px;
+      &:hover {
+        @extend %secondary-bg-color;
+        @extend %secondary-border-color;
+        color: contrast-color($color_secondary);
+      }
+    }
+
+    &.vc_active > a {
+      @extend %secondary-bg-color;
+      @extend %secondary-border-color;
+      color: contrast-color($color_secondary);
+    }
+
+  }
+
+
+  .vc_tta-panels {
+    border-width: 0;
+  }
+
+}
+
+.wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-02 {
+
+  .vc_tta-tabs-container {
+    overflow: unset;
+  }
+
+  .vc_tta-tabs-list {
+    @include d-flex();
+    border-bottom: 2px dotted;
+    @extend %primary-border-color;
+    margin: 0;
+    overflow: unset;
+  }
+  .vc_tta-tab {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    > a {
+      font-size: 14px;
+      border-width: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      img {
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+      .vc_tta-title-text {
+        margin-left: 0;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 22px;
+        &:before {
+          content: '';
+          height: 3px;
+          width: 0%;
+          left: 0;
+          @extend %primary-bg-color;
+          position: absolute;
+          bottom: -2px;
+          @include transition(all .3s);
+        }
+      }
+
+      &:hover,
+      &:focus{
+        @extend %primary-color;
+        background-color: transparent;
+        .vc_tta-title-text {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+    &.vc_active {
+      > a {
+        @extend %primary-color;
+        .vc_tta-title-text {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+  .vc_tta-panels {
+    border-width: 0;
+    padding: 0;
+  }
+}
+.wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-02,
+.wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-column {
+  &.vc_tta-tabs .vc_tta-panels-container .gel-image-box {
+    .title {
+      @extend %secondary-color;
+      font-size: 1.875rem;
+      font-weight: $font_weight_heading;
+      margin-bottom: 30px;
+    }
+    .image {
+      margin-bottom: 0;
+    }
+    .title-short-desc, .price-short-desc {
+      font-size: $font_size_md;
+      @extend %secondary-color;
+      margin-bottom: 10px;
+    }
+    .description-short-desc {
+      font-size: $font_size_md;
+      margin-bottom: 30px;
+    }
+    .price-short-desc {
+      margin-bottom: 43px;
+      del {
+        @extend %text-color;
+        font-weight: 400;
+      }
+      ins {
+        background: transparent;
+        font-size: $font_size_xl;
+        @extend %accent-text-color;
+      }
+    }
+  }
+}
+
+.wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-column {
+  .vc_tta-tabs-container {
+    margin: 0;
+    overflow: unset !important;
+    ul.vc_tta-tabs-list {
+      overflow: unset;
+      li {
+        position: relative;
+        border: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        &.vc_active:before {
+          content: '';
+          position: absolute;
+          top: 30%;
+          right: -28px;
+          display: inline-block;
+          border-top: 1px dashed;
+          border-right: 1px dashed;
+          @extend %primary-border-color;
+          width: 20px;
+          height: 20px;
+          @include transform(rotate(-140deg));
+          background: #f6f2e9;
+          z-index: 1;
+        }
+        &.vc_active a{
+          @extend %primary-color;
+        }
+        > a {
+            border: none;
+            img {
+              margin-bottom: 12px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            &:hover ,
+            &:focus{
+              background-color: transparent;
+              @extend %primary-color;
+            }
+        }
+      }
+    }
+    .vc_tta-title-text:not(:empty):not(:first-child){
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-02 .vc_tta-tab > a{
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-02 {
+    .vc_tta-panels {
+      margin-top: 45px;
+      .vc_tta-panel-body {
+        padding: 0;
+      }
+    }
+    .vc_tta-panels-container {
+      .vc_tta-panel-body,
+      .vc_tta-panels {
+        border: none;
+      }
+    }
+    .vc_tta-tabs-container {
+      margin: 0 !important;
+    }
+  }
+  .wpb-js-composer.wpb-js-composer .vc_tta.vc_general.custom-tab-column {
+    .vc_tta-panels-container {
+      border-left: 1px dashed $color_primary;
+      padding-left: 30px;
+      margin-left: 20px;
+      .vc_tta-panel-body {
+        padding: 25px 0 25px 10px;
+        li:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+      .vc_tta-panels {
+        border: none !important;
+      }
+    }
+  }
+}

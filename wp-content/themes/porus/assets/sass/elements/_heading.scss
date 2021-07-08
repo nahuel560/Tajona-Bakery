@@ -1,0 +1,31 @@
+
+.gel-heading-subtitle {
+    @extend %secondary-color;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.gel-heading-separate {
+    background: url("./assets/images/heading-separate.png");
+    height: 12px;
+    width: 80px;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+.gel-heading-description {
+    @extend %accent-text-color;
+    font-size: $font_size_lg;
+    margin-bottom: 0;
+    margin-top: 31px;
+}
+.gel-heading.has-line-separator .gel-heading-description{
+    padding-top: 0;
+}
+.gel-heading-title {
+    margin-bottom: 0;
+    @extend %font-primary;
+    font-weight: 400;
+}
+
+.gel-heading-title mark {
+    @extend %accent-text-color;
+}

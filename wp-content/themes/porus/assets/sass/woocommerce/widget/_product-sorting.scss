@@ -1,0 +1,7 @@
+.g5shop__widget-price-filter ul,
+.g5shop__widget-product-sorting ul {
+  @include widget-archive();
+  .current {
+    @extend %accent-text-color;
+  }
+}

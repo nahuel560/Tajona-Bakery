@@ -1,0 +1,39 @@
+.page-header {
+    padding: 3rem 0;
+    background-color: $color_background_page_title;
+    background: url("./assets/images/bg-page-title.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 660px;
+    @include d-flex();
+    @include align-items-center();
+    text-align: center;
+}
+
+.page-main-title {
+    @extend %font-primary;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.6;
+    @extend %heading-color;
+    font-size: 48px;
+}
+
+.page-sub-title {
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    @extend %accent-text-color;
+    p:last-child {
+        margin: 0;
+    }
+}
+
+@include media-md() {
+    .page-header {
+        min-height: 300px;
+    }
+}
+
+

@@ -1,0 +1,160 @@
+div.ot-dtp-picker.wide {
+	padding: 0;
+	width: 100%;
+	.ot-title,
+	.ot-powered-by {
+		display: none;
+	}
+	.ot-dtp-picker-form {
+		border: none;
+		@include d-flex();
+		@include flex-flow-wrap();
+		@include justify-content-center();
+		height: auto;
+		max-width: 870px;
+		margin: 0 auto;
+		background: transparent;
+		.ot-dtp-picker-selector {
+			max-width: 270px;
+			width: 100%;
+			+ div {
+				margin-left: 30px;
+			}
+			a.ot-dtp-picker-selector-link:not(.ot-date-label) {
+				padding-left: 185px;
+			}
+			a.ot-dtp-picker-selector-link {
+				@extend %font-body;
+				padding-right: 15px;
+				border-bottom: 1px dashed;
+				@extend %primary-border-color;
+				outline: none;
+				font-size: 15px;
+				@extend %accent-text-color;
+				&:before {
+					@extend %heading-color;
+					left: 0;
+				}
+				&:after {
+					@extend %accent-text-color;
+					right: 0;
+				}
+				&.ot-date-label.menu-opened, &.ot-select-label.highlighted {
+					outline: unset;
+					box-shadow: unset;
+				}
+			}
+			select {
+				@extend %accent-text-color;
+				background-color: transparent;
+				right: 0;
+				&:focus {
+					outline: none;
+				}
+			}
+			+ .ot-dtp-picker-selector {
+				border-left: none;
+			}
+			&.ot-date-picker {
+				a.ot-dtp-picker-selector-link {
+					text-align: right;
+				}
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+		.picker {
+			top: 100%;
+		}
+		.ot-dtp-picker-button {
+			margin-top: 60px !important;
+			max-width: 230px;
+			width: 100%;
+			border-radius: 30px;
+			font-size: 12px;
+			font-weight: bold;
+			height: 60px;
+			@extend %font-body;
+			background-color: transparent;
+			box-shadow: none;
+			@extend %secondary-color;
+			border: 2px solid;
+			@extend %primary-border-color;
+			&:hover {
+				@extend %secondary-bg-color;
+				@extend %secondary-border-color;
+				@extend %accent-foreground-color;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	div.ot-dtp-picker.wide .ot-dtp-picker-form {
+		@include flex-flow-column();
+		@include align-items-center();
+		.ot-dtp-picker-selector {
+			margin: 0 15px 23px 15px !important;
+			max-width: 350px;
+			a.ot-dtp-picker-selector-link:not(.ot-date-label) {
+				padding-left: 270px;
+			}
+		}
+		.ot-dtp-picker-button {
+			margin-top: 37px !important;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	div.ot-dtp-picker.wide .ot-dtp-picker-form {
+		.ot-dtp-picker-selector {
+			max-width: 270px;
+			a.ot-dtp-picker-selector-link:not(.ot-date-label) {
+				padding-left: 195px;
+			}
+		}
+	}
+}
+
+.opentable-1-col {
+	div.ot-dtp-picker.wide .ot-dtp-picker-form {
+		@include flex-flow-column();
+		@include align-items-center();
+		.ot-dtp-picker-selector {
+			margin: 0 15px 23px 15px !important;
+			max-width: 270px;
+			a.ot-dtp-picker-selector-link:not(.ot-date-label) {
+				padding-left: 195px;
+			}
+		}
+		.ot-dtp-picker-button {
+			margin-top: 37px !important;
+		}
+	}
+}
+
+.opentable-light {
+	div.ot-dtp-picker.wide .ot-dtp-picker-form {
+		.ot-dtp-picker-selector {
+			a.ot-dtp-picker-selector-link {
+				@extend %accent-foreground-color;
+				&:before {
+					@extend %primary-color;
+				}
+				&:after {
+					@extend %primary-color;
+				}
+			}
+		}
+		.ot-dtp-picker-button {
+			@extend %accent-foreground-color;
+			&:hover {
+				@extend %accent-foreground-bg-color;
+				@extend %primary-color;
+				@extend %accent-foreground-border-color;
+			}
+		}
+	}
+}

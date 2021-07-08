@@ -1,0 +1,46 @@
+.g5shop__product-featured .g5shop__product-deal-countdown {
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  left: 50%;
+  @include transform(translateX(-50%));
+}
+
+
+.g5shop__product-deal-countdown-inner {
+  @include d-flex();
+  @include justify-content-center();
+}
+
+.g5shop__countdown-section {
+  @include d-flex();
+  @include flex-column();
+  @include justify-content-center();
+  @include align-items-center();
+  width: 44px;
+  height: 44px;
+  background-color: #333;
+  color: #fff;
+  @include border-radius(4px);
+  +.g5shop__countdown-section {
+    margin-left: 5px;
+  }
+
+  .countdown-amount {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .countdown-period {
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+}
+
+.g5shop__deal-heading {
+  margin: 0 0 5px 0;
+  font-weight: 700;
+  display: block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,94 @@
+.woocommerce div.product div.summary {
+    .product_title {
+        font-size: 36px;
+        @extend %secondary-color;
+        font-weight: 600;
+        margin-bottom: 4px;
+        a {
+            color: inherit;
+            &:hover {
+                @extend %accent-text-color;
+            }
+        }
+        + .price {
+            margin-top: 15px;
+        }
+    }
+
+    .woocommerce-product-rating {
+        margin-bottom: 4px;
+        .star-rating {
+            margin-right: 15px;
+        }
+        a {
+            color: inherit;
+            &:hover {
+                @extend %accent-text-color;
+            }
+        }
+    }
+
+    p.price,
+    span.price {
+        font-size: 24px;
+        font-weight: bold;
+        @extend %accent-text-color;
+        margin-bottom: 1rem;
+        del {
+            @extend %text-color;
+            font-size: 0.8em;
+            font-weight: 400;
+            opacity: 1;
+            margin-right: 5px;
+        }
+        ins {
+            text-decoration: none;
+        }
+    }
+
+
+    .woocommerce-product-details__short-description {
+        margin-bottom: 35px;
+        p {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+
+    .yith-wcwl-add-to-wishlist {
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
+
+
+    .product_meta {
+        margin-top: 35px;
+        padding-top: 34px;
+        border-top: 1px solid;
+        @extend %border-color;
+
+    }
+
+    .g5shop__single-product-actions {
+        @include d-inline-flex();
+        .yith-wcwl-add-to-wishlist {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    .g5shop__product-deal-countdown {
+        margin-bottom: 1.5rem;
+    }
+
+    .g5shop__product-deal-countdown-inner {
+        @include justify-content-start();
+    }
+
+    .g5shop__quantity {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,186 @@
+.post-navigation {
+    margin-top: 65px;
+    .nav-links {
+        @include d-flex;
+        font-weight: 700;
+        a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .nav-subtitle {
+            display: block;
+            @extend %heading-color;
+            text-transform: uppercase;
+        }
+
+        > div {
+            width: 47.5%;
+            border: solid 1px;
+            @extend %border-color;
+            padding: 1.5rem;
+            @include transition(background-color 0.3s, color 0.3s, border-color 0.3s);
+
+            &:hover {
+                @extend %accent-bg-color;
+                @extend %accent-foreground-color;
+                @extend %accent-border-color;
+                .nav-subtitle {
+                    color: inherit;
+                }
+            }
+        }
+        .nav-title {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .nav-previous {
+        margin-right: auto;
+    }
+
+    .nav-next {
+        margin-left: auto;
+        text-align: right;
+    }
+}
+
+
+
+ul.page-numbers {
+    list-style: none;
+    @include d-flex();
+    @include justify-content-center();
+    padding: 0;
+    margin-bottom: 0;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.navigation.pagination {
+    font-size: 0;
+    position: relative;
+    text-align: center;
+}
+
+.page-numbers:not(ul) {
+    &:not(.dots) {
+        @include border-radius(50%);
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        line-height: 48px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        border: 1px solid $color_gray;
+        &.next {
+            &:before {
+                content: '\f178';
+            }
+            &:hover{
+                border: 2px dotted;
+                @extend %accent-border-color;
+                background-color: transparent;
+            }
+            &:hover:before{
+                @extend %accent-text-color;
+            }
+        }
+        &.prev {
+            &:before {
+                content: '\f177';
+            }
+            &:hover{
+                border: 2px dotted;
+                @extend %accent-border-color;
+            }
+            &:hover:before{
+                @extend %accent-text-color;
+                background-color: transparent;
+            }
+        }
+        &.prev,&.next  {
+            font-size: 0;
+            border: 2px dotted;
+            @extend %primary-border-color;
+            width: 46px;
+            height: 46px;
+            &:before{
+                font-family: $font_icon;
+                @extend %primary-color;
+                font-size: 1rem;
+            }
+        }
+    }
+    display: inline-block;
+    margin: 0 5px;
+    //line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    @extend %text-color;
+    @include transition(all 0.3s);
+
+    &:not(.current):not(.dots):not(.next):not(.prev):hover {
+        @extend %accent-foreground-color;
+        @extend %accent-bg-color;
+        border: 1px solid;
+        @extend %accent-border-color;
+    }
+
+    &.current {
+        @extend %accent-bg-color;
+        @extend %accent-foreground-color;
+
+        @include border-radius(50%);
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        line-height: 48px;
+        border: 1px solid;
+        @extend %accent-border-color;
+    }
+}
+
+.page-links {
+    float: left;
+    width: 100%;
+    .page-links-title {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    > .page-links-text,
+    > a {
+        display: inline-block;
+        margin-right: 0.25rem;
+        padding: 0.25rem 0.625rem;
+        border: solid 1px;
+        @extend %border-color;
+    }
+    > .page-links-text {
+        color: #fff;
+        @extend %accent-bg-color;
+        @extend %accent-border-color;
+    }
+}
+
+@include media-sm() {
+    .post-navigation .nav-links .nav-title {
+        display: none;
+    }
+}
+
+@include media-xxs() {
+    .post-navigation .nav-links > div {
+        padding: 1rem;
+    }
+}

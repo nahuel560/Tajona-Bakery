@@ -1,0 +1,18 @@
+.x-mega-sub-menu {
+  padding: 0;
+  .gel-heading-title {
+    font-size: 14px;
+    font-weight: 700;
+    @extend %font-body;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .gel-list .gel-list-item {
+    font-size: 16px;
+    &:hover {
+      @extend %primary-color;
+    }
+  }
+}
+

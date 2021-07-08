@@ -1,0 +1,21 @@
+.woocommerce-checkout .woocommerce form .form-row-first,
+.woocommerce-checkout .woocommerce form .form-row-last {
+  width: 100%;
+  float: none;
+}
+
+.woocommerce .woocommerce-form-login {
+  .woocommerce-form-login__rememberme {
+    margin-top: 10px;
+  }
+  .lost_password {
+    margin-bottom: 0;
+    a {
+      color: inherit;
+    }
+  }
+}
+
+.g5shop__checkout-toolbar {
+  margin-bottom: 2rem;
+}

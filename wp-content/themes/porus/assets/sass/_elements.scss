@@ -1,0 +1,211 @@
+.toggle-icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.toggle-icon > span {
+    bottom: 0;
+    display: block;
+    height: 2px;
+    left: 2px;
+    right: 8px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: currentColor;
+}
+
+.toggle-icon > span:after,
+.toggle-icon > span:before {
+    content: '';
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: -6px;
+
+    -webkit-transition: top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, background 0.3s;
+    -moz-transition: top 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, background 0.3s;
+    transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.3s;
+
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    background-color: currentColor;
+}
+
+.toggle-icon > span:before {
+    top: 8px;
+}
+
+.toggle-icon > span:after {
+    top: -8px;
+}
+
+.toggle-icon:hover {
+    color: #e4573d;
+}
+
+.toggle-icon.in > span {
+    background-color: transparent !important;
+}
+
+.toggle-icon.in > span:after,
+.toggle-icon.in > span:before {
+    -webkit-transition: top 0.3s ease-in-out, -webkit-transform 0.3s 0.5s ease-in-out, background 0.3s;
+    -moz-transition: top 0.3s ease-in-out, -moz-transform 0.3s 0.5s ease-in-out, background 0.3s;
+    transition: top 0.3s ease-in-out, transform 0.3s 0.5s ease-in-out, background 0.3s;
+
+    top: 0;
+}
+
+.toggle-icon.in > span:after {
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    -moz-transform: rotate3d(0, 0, 1, -45deg);
+    -ms-transform: rotate3d(0, 0, 1, -45deg);
+    -o-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.toggle-icon.in > span:before {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    -moz-transform: rotate3d(0, 0, 1, 45deg);
+    -ms-transform: rotate3d(0, 0, 1, 45deg);
+    -o-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+//social
+@media (max-width: 767px) {
+    .gel-social-text-center-sm > ul.list-si, .gel-list-text-center-sm li.item-list {
+        @include justify-content-center();
+    }
+}
+
+//slick
+.slick-arrows + .slick-dots {
+    margin-top: 0;
+}
+
+.slick-dots {
+    li {
+        opacity: 1;
+        width: 26px;
+        span {
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                @extend %accent-bg-color;
+                @include border-radius(50%);
+            }
+        }
+        &.slick-active {
+            margin-top: 2px;
+            span {
+                &:before {
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    background-color: transparent;
+                    border: 2px solid;
+                    @extend %secondary-border-color;
+                }
+            }
+        }
+    }
+}
+
+//slider-container
+.slider-container-dots-lh-1 .slick-dots {
+    line-height: 1;
+}
+
+//custom-vc
+.vc-col-no-pt > .vc_column-inner,
+.vc_row.vc_row.vc-col-no-pt > .vc_column_container > .vc_column-inner,
+.vc_row.vc_row.vc-col-no-pt > .vc_column_container > .vc_column-inner,
+.vc_row.vc_row.vc-col-no-pt > .vc_column_container > .vc_column-inner {
+    padding-top: 0;
+}
+
+//custom-content-block
+.custom-content-block {
+    p {
+        font-weight: 700;
+        margin-bottom: 16px;
+        @extend %accent-text-color;
+        text-align: center;
+        font-size: $font_size_sm;
+    }
+}
+
+//menu-popup
+.g5core-menu-popup-wrapper {
+    background: url("./assets/images/bg-popup-menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .mfp-close {
+        margin-top: 3rem;
+        margin-right: 3rem;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        border: 1px dotted;
+        @extend %primary-border-color;
+        font-size: 25px;
+        line-height: 25px;
+        &:hover {
+            border-color: $color_accent !important;
+        }
+    }
+}
+
+//banner
+.custom-banner {
+    &.gel-banner {
+        @include border-radius(15px);
+        -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+//landing-page
+@media (max-width: 1023px) and (min-width: 992px) {
+    .custom-header-landing {
+        padding-top: 100px;
+    }
+}
+
+
+
+//layout-container
+@media (max-width: 991px) {
+    .md-layout-content-center{
+        .gel-layout-container{
+            @include flex-flow-column();
+            @include align-items-center();
+            .gel-layout-section{
+                @include align-items-center();
+                text-align: center;
+            }
+        }
+    }
+}
+//Client-logo
+.gel-client-logo-height{
+    height: 50px;
+}
+

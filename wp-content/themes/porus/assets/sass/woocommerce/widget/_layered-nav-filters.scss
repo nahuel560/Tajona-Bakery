@@ -1,0 +1,78 @@
+.woocommerce .widget_layered_nav_filters ul {
+  li {
+    a {
+     color: inherit;
+      &:before {
+        @extend %accent-text-color;
+        font-size: 14px;
+        position: relative;
+        top: 1px;
+      }
+      &:hover {
+        @extend %accent-text-color;
+      }
+    }
+  }
+}
+
+
+.woocommerce .woocommerce-widget-layered-nav ul.woocommerce-widget-layered-nav-list {
+  @extend %secondary-color;
+  a {
+    display: inline-block;
+    padding: 0.5rem 0 0.5rem 15px;
+    position: relative;
+    line-height: 20px;
+    min-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  span.count {
+    position: absolute;
+    top: 5px;
+    padding: 0;
+    right: 0;
+    font-weight: bold;
+  }
+
+  li.woocommerce-widget-layered-nav-list__item {
+    position: relative;
+  }
+
+
+
+  li.woocommerce-widget-layered-nav-list__item--chosen {
+    a{
+      @extend %accent-text-color;
+      + .count {
+        @extend %accent-text-color;
+      }
+      &:not(.layered-nav-item-color) {
+        > span {
+          @extend %accent-bg-color;
+        }
+      }
+    }
+  }
+
+
+
+  a {
+    &:hover {
+      @extend %accent-text-color;
+      + .count {
+        @extend %accent-text-color;
+      }
+    }
+
+    &:not(.layered-nav-item-color) {
+      &:hover {
+        > span {
+          @extend %accent-bg-color;
+        }
+      }
+    }
+  }
+}

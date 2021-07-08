@@ -1,0 +1,16 @@
+.woocommerce-loop-category__title,
+.g5shop__loop-product-title,
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+  font-size: 18px;
+  font-weight: bold;
+  @extend %secondary-color;
+  &:hover {
+    @extend %primary-color;
+  }
+
+  mark {
+    background: transparent;
+    padding: 0;
+  }
+}

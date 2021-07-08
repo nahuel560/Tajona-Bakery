@@ -1,0 +1,31 @@
+@media (min-width: 1200px) {
+  body.no-sidebar.woocommerce div.product.g5shop__single-product-layout-1 {
+    div.images {
+      width: 41.666667%;
+    }
+    div.summary {
+      width: 58.333333%;
+      padding-left: 30px;
+    }
+  }
+}
+
+.woocommerce div.product.g5shop__single-product {
+  div.images,
+  div.summary {
+    margin-bottom: 0;
+  }
+}
+
+.g5shop__single-product-summary {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .woocommerce div.product.g5shop__single-product {
+    div.images {
+      margin-bottom: 2rem;
+    }
+  }
+}
+

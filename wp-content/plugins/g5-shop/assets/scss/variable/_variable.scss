@@ -1,0 +1,42 @@
+$font_size_base: 16px;
+
+
+// General variables
+$color_accent: #d7aa82;
+$color_accent_foreground: #fff;
+$color_text_main: #777;
+$color_disabled: #ccc;
+$color_text_caption: #ababab;
+$color_border: #eee;
+$color_text_heading: #222;
+$color_secondary : #35b0d6;
+$color_primary : #d64c35;
+
+
+// Responsive widths.
+$small_mobile_width: 320px;
+$mobile_width: 576px;
+$tablet_width: 768px;
+$desktop_width: 992px;
+$wide_width: 1200px;
+$container_width: 1200px;
+$grid_gutter_width: 30px;
+
+
+// Line Height
+$post_except_line_height: 1.6;
+
+// Button
+$color_text_button: #fff;
+$color_background_button: $color_accent;
+$color_background_button_hover: #222;
+$height_button: 48px;
+
+// Header variables
+$header_background_color: #fff;
+$header_text_color: #222;
+$header_text_hover_color: #d7aa82;
+$header_border_color: #ddd;
+$header_disable_color: #888;
+
+$font_primary: 'Libre Baskerville';

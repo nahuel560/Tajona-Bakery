@@ -1,0 +1,19 @@
+.woocommerce div.product.g5shop__single-product div.summary,
+.woocommerce .g5shop__product-item  .g5shop__product-info {
+  .price {
+    display: block;
+    del {
+      color: inherit;
+      display: inline-block;
+      opacity: 0.5;
+    }
+
+    ins {
+      background: transparent;
+      display: inline-block;
+    }
+  }
+}
+
+
+

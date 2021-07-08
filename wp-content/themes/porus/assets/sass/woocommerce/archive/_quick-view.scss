@@ -1,0 +1,39 @@
+#g5shop__popup-product-quick-view {
+    border-radius: 30px;
+    background-color: #f6f2e9;
+    width: 1170px;
+    padding: 50px 30px 50px 30px;
+    button.mfp-close {
+        border: 2px dotted;
+        @extend %primary-border-color;
+        border-radius: 50%;
+        line-height: 0;
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+        top: 25px;
+        right: 25px;
+        &:hover {
+            border: 2px dotted $color_primary !important;
+        }
+    }
+    div.images .woocommerce-product-gallery__wrapper .zoomImg {
+        background-color: #f6f2e9;
+    }
+    form.cart {
+        .single_add_to_cart_button {
+            max-width: 340px;
+        }
+    }
+    div.product div.images .woocommerce-product-gallery__trigger {
+        background: transparent;
+    }
+}
+
+@media (max-width: 1024px) {
+    #g5shop__popup-product-quick-view {
+        .g5shop__quantity .g5shop__quantity-inner {
+            width: 110px;
+        }
+    }
+}

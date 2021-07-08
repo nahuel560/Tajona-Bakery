@@ -1,0 +1,167 @@
+.woocommerce div.product .woocommerce-tabs {
+    padding-top: 4.25rem;
+    ul.tabs {
+        text-align: center;
+        padding: 0;
+        &:before {
+            display: none;
+        }
+        li {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0 2.5rem 0 0;
+            position: relative;
+            z-index: 2;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:before,
+            &:after {
+                display: none;
+            }
+            a {
+                font-size: 18px;
+                font-weight: bold;
+                @extend %secondary-color;
+                text-transform: uppercase;
+                padding: 0 25px 12px 25px;
+                border-color: transparent;
+            }
+
+            &:hover,
+            &.active {
+                background: transparent;
+                border-bottom: 3px solid;
+                @extend %accent-border-color;
+                a {
+                    @extend %accent-text-color;
+                }
+            }
+        }
+    }
+
+    .panel {
+        > h2 {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .woocommerce div.product .woocommerce-tabs {
+        ul.tabs {
+            li {
+                display: block;
+                margin: 0;
+            }
+            li + li {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+.g5shop__panels-container {
+    font-size: 16px;
+}
+
+.g5shop__panel-heading {
+    h4 {
+        font-size: 15px;
+        font-weight: bold;
+        @extend %secondary-color;
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        @extend %border-color;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .g5shop__tab-panel {
+        border: 1px solid $color_border;
+    }
+}
+
+.g5shop__tabs-container {
+    margin-bottom: 40px;
+    .nav-tabs {
+        border-color: transparent;
+        .nav-link {
+            font-size: 18px;
+            font-weight: bold;
+            @extend %secondary-color;
+            text-transform: uppercase;
+            padding: 0 25px 12px 25px;
+            border-color: transparent;
+
+            &:before {
+                @extend %accent-bg-color;
+                top: auto;
+                bottom: 0;
+            }
+            &:hover,
+            &.active {
+                @extend %accent-text-color;
+            }
+
+
+        }
+    }
+}
+
+
+.g5shop__single-product-tabs {
+    margin-top: 80px;
+
+    &.layout-1 {
+        .nav-tabs {
+            padding-left: 0;
+        }
+    }
+
+
+    &.layout-3 {
+        .g5shop__tabs-container {
+            .nav-tabs {
+                .nav-link {
+
+                    border-color: $color_border $color_border $color_border;
+                    padding: 12px 25px;
+                    font-size: 15px;
+
+
+                    &:hover,
+                    &.active {
+                        @extend %accent-text-color;
+                    }
+                    &.active {
+                        border-color: $color_border #fff $color_border $color_border;
+                    }
+                }
+            }
+        }
+        .g5shop__panels-container {
+            border: 1px solid;
+            @extend %border-color;
+        }
+    }
+
+    &.layout-4 {
+
+        .g5shop__tab-panel {
+            border: 1px solid;
+            @extend %border-color;
+        }
+    }
+}
+
+

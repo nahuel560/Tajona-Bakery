@@ -1,0 +1,29 @@
+.woocommerce .quantity .qty {
+    width: 155px;
+    padding: 0;
+    background: transparent;
+    border: 1px dashed;
+    @extend %primary-border-color;
+    @include border-radius(30px);
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.g5shop__quantity {
+    label {
+        @extend %secondary-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .g5shop__quantity-inner {
+        width: 155px;
+        .btn-number {
+            width: 40px;
+            @extend %heading-color;
+        }
+    }
+}

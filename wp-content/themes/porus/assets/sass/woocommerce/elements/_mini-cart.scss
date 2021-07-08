@@ -1,0 +1,27 @@
+.g5shop__mini-cart {
+
+  ul.woocommerce-mini-cart {
+    li {
+      a:not(.remove) {
+        &:hover,
+        &:focus,
+        &:active {
+          @extend %accent-text-color;
+        }
+      }
+    }
+  }
+  .fa-shopping-cart:before{
+    content: "";
+    font-weight: 700;
+    font-family: Fontawesome;
+  }
+}
+
+.g5shop_header-action-icon {
+  a {
+    > span {
+      @extend %primary-bg-color;
+    }
+  }
+}

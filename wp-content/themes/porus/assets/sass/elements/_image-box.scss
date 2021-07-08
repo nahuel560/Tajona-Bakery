@@ -1,0 +1,29 @@
+.gel-image-box-style-01,
+.gel-image-box-style-02,
+.gel-image-box-style-03 {
+    .image {
+        margin-bottom: 22px;
+    }
+    h4.title {
+        font-size: 20px;
+        @extend %secondary-color;
+        margin-bottom: 10px;
+    }
+}
+
+.image-box-mg-bt-img-5 .gel-image-box .image {
+    margin-bottom: 5px;
+}
+
+div.custom-mg-image-12 {
+    .image {
+        margin-bottom: 12px;
+    }
+}
+.custom-description-width-320{
+    .description{
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

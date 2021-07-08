@@ -1,0 +1,13 @@
+.woocommerce form.woocommerce-form-track-order {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  .form-row-first,
+  .form-row-last {
+    width: 100%;
+    input.input-text {
+      text-align: center;
+    }
+  }
+}

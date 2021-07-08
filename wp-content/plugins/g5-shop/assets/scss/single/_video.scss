@@ -1,0 +1,19 @@
+.g5shop__product-gallery-video {
+  position: absolute;
+  right: 10px;
+  top: 56px;
+  z-index: 1;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  color: #000;
+}
+
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+  top: 10px;
+  right: 10px;
+}

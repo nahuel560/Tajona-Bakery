@@ -1,0 +1,40 @@
+.g5shop__post-skin-modern {
+  .g5shop__product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 1.875rem;
+  }
+
+  .g5core__entry-thumbnail {
+    &:after {
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.7), transparent);
+      opacity: 1 !important;
+    }
+  }
+
+
+  .g5shop__loop-product_excerpt,
+  .price,
+  .g5shop__loop-product-title,
+  .g5shop__loop-product-cat {
+    color: #fff !important;
+  }
+
+  .g5shop__loop-product-title,
+  .g5shop__loop-product-cat {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .price {
+    del,
+    ins {
+      color: inherit !important;
+    }
+  }
+
+}

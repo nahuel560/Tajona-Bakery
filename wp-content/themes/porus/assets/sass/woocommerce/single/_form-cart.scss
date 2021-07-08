@@ -1,0 +1,122 @@
+.woocommerce div.product form.cart {
+    margin-bottom: 35px;
+    table.variations {
+        margin-bottom: 20px;
+        td,
+        th {
+            vertical-align: middle;
+            padding: 0 0 20px 0;
+        }
+
+        tr:last-child {
+            td,
+            th {
+                padding: 0;
+            }
+        }
+
+        td.label {
+            width: 30%;
+            label {
+                margin: 0;
+                @extend %secondary-color;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        .reset_variations {
+            color: inherit;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: bold;
+            &:hover {
+                @extend %heading-color;
+            }
+        }
+
+        select {
+            background-color: transparent;
+        }
+
+    }
+
+    .woocommerce-variation-add-to-cart {
+        margin-top: 20px;
+        @extend %clearfix;
+    }
+
+
+    .woocommerce-variation-description {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    table.group_table {
+        margin-bottom: 20px;
+        td {
+            padding: 0 0 20px 0;
+            vertical-align: middle;
+        }
+        tr:last-child {
+            td {
+                padding-bottom: 0;
+            }
+        }
+        td:first-child {
+            width: 150px;
+            text-align: left;
+        }
+
+        td.woocommerce-grouped-product-list-item__label {
+            label {
+                margin: 0;
+            }
+            a {
+                font-size: 14px;
+                font-weight: 600;
+                @extend %secondary-color;
+                &:hover {
+                    @extend %accent-text-color;
+                }
+            }
+        }
+
+        td.woocommerce-grouped-product-list-item__price {
+            ins {
+                background: transparent;
+            }
+            del {
+                opacity: .5;
+            }
+            .amount {
+                @extend %accent-text-color;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+
+        .g5shop__quantity {
+            margin: 0;
+            padding: 0;
+            .stock-status,
+            label {
+                display: none;
+            }
+        }
+    }
+
+    .single_add_to_cart_button {
+        margin: 0 10px 0 0;
+    }
+
+    .stock {
+        font-size: 14px;
+        color: #2dad4b;
+    }
+
+}
+

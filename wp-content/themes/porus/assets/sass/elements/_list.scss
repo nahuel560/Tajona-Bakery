@@ -1,0 +1,6 @@
+.gel-list-style-01,
+.gel-list-style-02{
+    .item-list:not(:last-child){
+        padding-bottom: 8px;
+    }
+}

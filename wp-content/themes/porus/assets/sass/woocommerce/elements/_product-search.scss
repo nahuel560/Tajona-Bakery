@@ -1,0 +1,92 @@
+$height__input_search_product_popup: 60px;
+
+.g5shop__search-product-popup {
+  .select2-container.select2-container .select2-selection--single {
+    height: $height__input_search_product_popup;
+  }
+
+
+  .select2-container--default.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: $height__input_search_product_popup - 2px;
+    padding-left: 25px;
+    text-align: left;
+    padding-right: 25px;
+    font-size:16px;
+    @extend %text-color;
+  }
+
+
+  .select2-container--default.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: $height__input_search_product_popup;
+  }
+}
+
+.g5shop__search-product {
+  .g5shop__search-product-cat {
+    select,
+    .select2-container--default.select2-container--default .select2-selection--single {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .select2-container--default.select2-container--default .select2-selection--single .select2-selection__arrow b {
+      border-color: currentColor transparent transparent transparent !important;
+    }
+
+    .select2-container--default.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+      border-color: transparent transparent currentColor transparent !important;
+    }
+  }
+
+  .g5shop__search-product-input {
+    input[type=search] {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &.g5core-search-ajax {
+    &.in {
+
+      select,
+      .select2-container--default.select2-container--default .select2-selection--single {
+        border-bottom-left-radius: 0;
+      }
+
+      .g5shop__search-product-input {
+        input[type=search] {
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+
+  .result {
+    a {
+      font-weight: bold;
+      font-size: 16px;
+      @extend %secondary-color;
+      &:hover {
+        @extend %primary-color;
+      }
+    }
+    .amount {
+      font-size: 15px;
+      font-weight: bold;
+      @extend %accent-text-color;
+    }
+
+    ins {
+      background-color: transparent;
+    }
+
+    del {
+      .amount {
+        @extend %text-color;
+        font-size: 0.8em;
+        font-weight: 400;
+      }
+    }
+
+  }
+}

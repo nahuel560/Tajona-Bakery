@@ -1,0 +1,13 @@
+.g5core__paging {
+  &.next-prev {
+    > a {
+      @extend %caption-color;
+      @extend %border-color;
+      &:not(.disable):hover {
+        @extend %accent-bg-color;
+        @extend %accent-foreground-color;
+        @extend %accent-border-color;
+      }
+    }
+  }
+}

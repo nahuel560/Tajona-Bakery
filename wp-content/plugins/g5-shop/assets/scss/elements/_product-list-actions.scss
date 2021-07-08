@@ -1,0 +1,76 @@
+.g5shop__product-list-actions {
+  @include d-flex();
+  @include align-items-center();
+  @include flex-wrap();
+
+  a.button.button {
+    margin: 5px 10px 5px 0;
+  }
+
+  .g5shop__quick-view {
+    margin: 5px 10px 5px 0;
+  }
+
+
+  .yith-wcwl-add-to-wishlist {
+    margin: 5px 10px 5px 0;
+  }
+
+  .add_to_cart_button,
+  .product_type_grouped,
+  .product_type_external,
+  .added_to_cart,
+  .product_out_of_stock,
+  .product_type_variable{
+    &:before {
+      font-size: 16px;
+      font-family: 'Font Awesome 5 Pro';
+      content: '\f07a';
+      font-weight: 400;
+      margin-right: 10px;
+    }
+  }
+
+  .product_out_of_stock,
+  .product_type_variable,
+  .product_type_grouped {
+    &:before {
+      content: '\f06e';
+    }
+  }
+
+
+  .added_to_cart:before {
+    font-weight: 900;
+    content: '\f217';
+  }
+
+  .add_to_cart_button.loading {
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: inline-block;
+      -webkit-animation: spin 2s linear infinite;
+      -moz-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      content: '\f110' !important;
+      font-family: 'Font Awesome 5 Pro' !important;
+      font-weight: 300 !important;
+    }
+  }
+
+  .add_to_cart_button.added {
+    display: none;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .g5shop__product-list-actions {
+    .g5shop__quick-view,
+    .compare {
+      display: none;
+    }
+  }
+}

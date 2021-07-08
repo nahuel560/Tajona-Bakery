@@ -1,0 +1,1295 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: G5 Shop\n"
+"POT-Creation-Date: 2019-12-26 16:03+0700\n"
+"PO-Revision-Date: 2017-07-08 15:18+0700\n"
+"Last-Translator: \n"
+"Language-Team: G5Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_GB\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;"
+"_n_noop:1,2;_nx_noop:1,2,3c;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: .idea\n"
+"X-Poedit-SearchPathExcluded-2: .svn\n"
+
+#: g5-shop.php:62
+msgid ""
+"G5 Shop is enabled but not effective. It requires G5 Core and "
+"WooCommerce in order to work."
+msgstr ""
+
+#: g5core/header/customize/my-account.php:13 inc/templates.class.php:340
+#: inc/templates.class.php:355
+msgid "My Account"
+msgstr ""
+
+#: g5core/header/customize/wishlist.php:18
+msgid "My Wishlist"
+msgstr ""
+
+#: inc/ajax.class.php:73
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: inc/assets.class.php:80
+msgid "Sorry, the minimum value was reached"
+msgstr ""
+
+#: inc/assets.class.php:81
+msgid "Sorry, the maximum value was reached"
+msgstr ""
+
+#: inc/assets.class.php:82
+msgid "Add to cart"
+msgstr ""
+
+#: inc/assets.class.php:83
+msgid "Read more"
+msgstr ""
+
+#: inc/assets.class.php:84
+msgid "Select options"
+msgstr ""
+
+#: inc/assets.class.php:85
+msgid "All Category"
+msgstr ""
+
+#: inc/config-options.class.php:41 inc/config-options.class.php:52
+msgid "Shop"
+msgstr ""
+
+#: inc/config-options.class.php:51
+msgid "Shop Options"
+msgstr ""
+
+#: inc/config-options.class.php:72
+msgid "General"
+msgstr ""
+
+#: inc/config-options.class.php:77
+msgid "Show Featured Label"
+msgstr ""
+
+#: inc/config-options.class.php:78
+msgid "Turn Off this option if you want to disable featured label"
+msgstr ""
+
+#: inc/config-options.class.php:84
+msgid "Featured Label Text"
+msgstr ""
+
+#: inc/config-options.class.php:85
+msgid "Enter product featured label text"
+msgstr ""
+
+#: inc/config-options.class.php:86
+msgid "Hot"
+msgstr ""
+
+#: inc/config-options.class.php:91
+msgid "Show Sale Label"
+msgstr ""
+
+#: inc/config-options.class.php:92
+msgid "Turn Off this option if you want to disable sale label"
+msgstr ""
+
+#: inc/config-options.class.php:97
+msgid "Sale Flash Mode"
+msgstr ""
+
+#: inc/config-options.class.php:100 inc/swatches.class.php:52
+msgid "Text"
+msgstr ""
+
+#: inc/config-options.class.php:101
+msgid "Percent"
+msgstr ""
+
+#: inc/config-options.class.php:109
+msgid "Sale Label Text"
+msgstr ""
+
+#: inc/config-options.class.php:110
+msgid "Enter product sale label text"
+msgstr ""
+
+#: inc/config-options.class.php:111
+msgid "Sale"
+msgstr ""
+
+#: inc/config-options.class.php:119
+msgid "Show New Label"
+msgstr ""
+
+#: inc/config-options.class.php:120
+msgid "Turn Off this option if you want to disable new label"
+msgstr ""
+
+#: inc/config-options.class.php:127
+msgid "Mark New After Published (Days)"
+msgstr ""
+
+#: inc/config-options.class.php:128
+msgid "Enter the number of days after the publication is marked as new"
+msgstr ""
+
+#: inc/config-options.class.php:135
+msgid "New Label Text"
+msgstr ""
+
+#: inc/config-options.class.php:136
+msgid "Enter product new label text"
+msgstr ""
+
+#: inc/config-options.class.php:137
+msgid "New"
+msgstr ""
+
+#: inc/config-options.class.php:142
+msgid "Show Sale Count Down"
+msgstr ""
+
+#: inc/config-options.class.php:143
+msgid "Turn On this option if you want to enable sale count down"
+msgstr ""
+
+#: inc/config-options.class.php:148 inc/config-options.class.php:943
+msgid "Swatches Enable"
+msgstr ""
+
+#: inc/config-options.class.php:149 inc/config-options.class.php:944
+msgid "Turn On this option if you want to enable swatches"
+msgstr ""
+
+#: inc/config-options.class.php:154 inc/config-options.class.php:949
+msgid "Swatches Attributes"
+msgstr ""
+
+#: inc/config-options.class.php:155 inc/config-options.class.php:950
+msgid "Select Attributes to show on listing product"
+msgstr ""
+
+#: inc/config-options.class.php:160 inc/config-options.class.php:955
+msgid "Select Attributes"
+msgstr ""
+
+#: inc/config-options.class.php:165
+msgid "Show Add To Cart Button"
+msgstr ""
+
+#: inc/config-options.class.php:166
+msgid "Turn Off this option if you want to disable add to cart button"
+msgstr ""
+
+#: inc/config-options.class.php:171
+msgid "Product Image Size Mini Cart"
+msgstr ""
+
+#: inc/config-options.class.php:172
+msgid "Enter product image size in mini cart"
+msgstr ""
+
+#: inc/config-options.class.php:181
+msgid "Product Image Size Gallery Thumbnail"
+msgstr ""
+
+#: inc/config-options.class.php:182
+msgid "Enter product image size in gallery thumbnail"
+msgstr ""
+
+#: inc/config-options.class.php:197
+msgid "Shop Listing"
+msgstr ""
+
+#: inc/config-options.class.php:202 inc/config-options.class.php:557
+#: inc/config-options.class.php:921
+msgid "Layout"
+msgstr ""
+
+#: inc/config-options.class.php:203 inc/config-options.class.php:922
+#: templates/shortcodes/product-tabs/config.php:80
+#: templates/shortcodes/products/config.php:32
+msgid "Specify your product layout"
+msgstr ""
+
+#: inc/config-options.class.php:210
+#: templates/shortcodes/product-slider-tabs/config.php:79
+#: templates/shortcodes/product-tabs/config.php:88
+#: templates/shortcodes/products-slider/config.php:31
+#: templates/shortcodes/products/config.php:41
+msgid "Item Skin"
+msgstr ""
+
+#: inc/config-options.class.php:211
+#: templates/shortcodes/product-slider-tabs/config.php:80
+#: templates/shortcodes/product-tabs/config.php:89
+#: templates/shortcodes/products-slider/config.php:32
+#: templates/shortcodes/products/config.php:42
+msgid "Specify your product item skin"
+msgstr ""
+
+#: inc/config-options.class.php:218
+#: templates/shortcodes/product-slider-tabs/config.php:88
+#: templates/shortcodes/product-tabs/config.php:97
+#: templates/shortcodes/products-slider/config.php:40
+#: templates/shortcodes/products/config.php:50
+msgid "Item Css Classes"
+msgstr ""
+
+#: inc/config-options.class.php:219
+#: templates/shortcodes/product-slider-tabs/config.php:89
+#: templates/shortcodes/product-tabs/config.php:98
+#: templates/shortcodes/products-slider/config.php:41
+#: templates/shortcodes/products/config.php:51
+msgid "Add custom css classes to item"
+msgstr ""
+
+#: inc/config-options.class.php:224
+#: templates/shortcodes/product-slider-tabs/config.php:112
+#: templates/shortcodes/product-tabs/config.php:121
+#: templates/shortcodes/products-slider/config.php:64
+#: templates/shortcodes/products/config.php:74
+msgid "Product Columns Gutter"
+msgstr ""
+
+#: inc/config-options.class.php:225 inc/config-options.class.php:629
+#: inc/config-options.class.php:733 inc/config-options.class.php:834
+#: templates/shortcodes/product-categories/config.php:19
+#: templates/shortcodes/product-slider-tabs/config.php:113
+#: templates/shortcodes/product-tabs/config.php:122
+#: templates/shortcodes/products-slider/config.php:65
+#: templates/shortcodes/products/config.php:75
+msgid "Specify your horizontal space between product."
+msgstr ""
+
+#: inc/config-options.class.php:233 inc/config-options.class.php:637
+#: inc/config-options.class.php:741 inc/config-options.class.php:842
+msgid "Product Columns"
+msgstr ""
+
+#: inc/config-options.class.php:244 inc/config-options.class.php:445
+#: inc/config-options.class.php:648 inc/config-options.class.php:752
+#: inc/config-options.class.php:853
+msgid "Extra Large Devices"
+msgstr ""
+
+#: inc/config-options.class.php:245 inc/config-options.class.php:649
+#: inc/config-options.class.php:753 inc/config-options.class.php:854
+msgid "Specify your product columns on extra large devices (>= 1200px)"
+msgstr ""
+
+#: inc/config-options.class.php:253 inc/config-options.class.php:454
+#: inc/config-options.class.php:657 inc/config-options.class.php:761
+#: inc/config-options.class.php:862
+msgid "Large Devices"
+msgstr ""
+
+#: inc/config-options.class.php:254 inc/config-options.class.php:658
+#: inc/config-options.class.php:762 inc/config-options.class.php:863
+msgid "Specify your product columns on large devices (>= 992px)"
+msgstr ""
+
+#: inc/config-options.class.php:262 inc/config-options.class.php:463
+#: inc/config-options.class.php:666 inc/config-options.class.php:770
+#: inc/config-options.class.php:871
+msgid "Medium Devices"
+msgstr ""
+
+#: inc/config-options.class.php:263 inc/config-options.class.php:667
+#: inc/config-options.class.php:771 inc/config-options.class.php:872
+msgid "Specify your product columns on medium devices (>= 768px)"
+msgstr ""
+
+#: inc/config-options.class.php:278 inc/config-options.class.php:479
+msgid "Small Devices"
+msgstr ""
+
+#: inc/config-options.class.php:279 inc/config-options.class.php:683
+#: inc/config-options.class.php:787 inc/config-options.class.php:888
+msgid "Specify your product columns on small devices (< 768px)"
+msgstr ""
+
+#: inc/config-options.class.php:287 inc/config-options.class.php:488
+msgid "Extra Small Devices"
+msgstr ""
+
+#: inc/config-options.class.php:288 inc/config-options.class.php:692
+#: inc/config-options.class.php:796 inc/config-options.class.php:897
+msgid "Specify your product columns on extra small devices (< 576px)"
+msgstr ""
+
+#: inc/config-options.class.php:300 inc/config-options.class.php:619
+#: inc/config-options.class.php:723 inc/config-options.class.php:824
+msgid "Posts Per Page"
+msgstr ""
+
+#: inc/config-options.class.php:301
+msgid "Enter number of product per page you want to display."
+msgstr ""
+
+#: inc/config-options.class.php:308
+#: templates/shortcodes/product-tabs/config.php:143
+#: templates/shortcodes/products/config.php:96
+msgid "Paging"
+msgstr ""
+
+#: inc/config-options.class.php:309
+msgid "Specify your paging mode"
+msgstr ""
+
+#: inc/config-options.class.php:316
+#: templates/shortcodes/product-slider-tabs/config.php:134
+#: templates/shortcodes/product-tabs/config.php:151
+#: templates/shortcodes/products-slider/config.php:86
+#: templates/shortcodes/products/config.php:104
+msgid "Animation"
+msgstr ""
+
+#: inc/config-options.class.php:317
+#: templates/shortcodes/product-slider-tabs/config.php:135
+#: templates/shortcodes/product-tabs/config.php:152
+msgid "Specify your post animation"
+msgstr ""
+
+#: inc/config-options.class.php:325
+msgid "Image Hover Effect"
+msgstr ""
+
+#: inc/config-options.class.php:326
+msgid "Specify your product image hover effect"
+msgstr ""
+
+#: inc/config-options.class.php:332
+#: templates/shortcodes/product-slider-tabs/config.php:94
+#: templates/shortcodes/product-tabs/config.php:103
+#: templates/shortcodes/products-slider/config.php:46
+#: templates/shortcodes/products/config.php:56
+msgid "Show Category"
+msgstr ""
+
+#: inc/config-options.class.php:337
+#: templates/shortcodes/product-slider-tabs/config.php:106
+#: templates/shortcodes/product-tabs/config.php:115
+#: templates/shortcodes/products-slider/config.php:58
+#: templates/shortcodes/products/config.php:68
+msgid "Show Excerpt"
+msgstr ""
+
+#: inc/config-options.class.php:342
+#: templates/shortcodes/product-slider-tabs/config.php:100
+#: templates/shortcodes/product-tabs/config.php:109
+#: templates/shortcodes/products-slider/config.php:52
+#: templates/shortcodes/products/config.php:62
+msgid "Show Rating"
+msgstr ""
+
+#: inc/config-options.class.php:347
+msgid "Show Quick View"
+msgstr ""
+
+#: inc/config-options.class.php:358
+msgid "Shop Toolbar"
+msgstr ""
+
+#: inc/config-options.class.php:363
+msgid "Shop ToolBar Layout"
+msgstr ""
+
+#: inc/config-options.class.php:364
+msgid "Specify your shop tool bar layout"
+msgstr ""
+
+#: inc/config-options.class.php:367
+msgid "Boxed Content"
+msgstr ""
+
+#: inc/config-options.class.php:368
+msgid "Stretched row"
+msgstr ""
+
+#: inc/config-options.class.php:369
+msgid "Stretched row and content"
+msgstr ""
+
+#: inc/config-options.class.php:375
+msgid "Shop ToolBar"
+msgstr ""
+
+#: inc/config-options.class.php:381 inc/config-options.class.php:399
+msgid "Result Count"
+msgstr ""
+
+#: inc/config-options.class.php:384 inc/config-options.class.php:402
+msgid "Ordering"
+msgstr ""
+
+#: inc/config-options.class.php:385 inc/config-options.class.php:405
+msgid "Switch Layout"
+msgstr ""
+
+#: inc/config-options.class.php:388
+#: templates/shortcodes/products-slider/config.php:17
+#: templates/shortcodes/products/config.php:17
+msgid "Category Filter"
+msgstr ""
+
+#: inc/config-options.class.php:389 inc/config-options.class.php:406
+#: templates/toolbar/filter.php:7
+msgid "Filter"
+msgstr ""
+
+#: inc/config-options.class.php:395
+msgid "Shop ToolBar Mobile"
+msgstr ""
+
+#: inc/config-options.class.php:412
+#: templates/shortcodes/products-slider/config.php:94
+#: templates/shortcodes/products/config.php:112
+msgid "Append Categories"
+msgstr ""
+
+#: inc/config-options.class.php:413
+#: templates/shortcodes/products-slider/config.php:98
+#: templates/shortcodes/products/config.php:116
+msgid ""
+"Change where the categories are attached (Selector, htmlString, Array, "
+"Element, jQuery object)"
+msgstr ""
+
+#: inc/config-options.class.php:426
+msgid "Filter Columns"
+msgstr ""
+
+#: inc/config-options.class.php:446
+msgid ""
+"Specify your archive filter columns on extra large devices (>= 1200px)"
+msgstr ""
+
+#: inc/config-options.class.php:455
+msgid "Specify your archive filter columns on large devices (>= 992px)"
+msgstr ""
+
+#: inc/config-options.class.php:464
+msgid "Specify your archive filter columns on medium devices (>= 768px)"
+msgstr ""
+
+#: inc/config-options.class.php:480
+msgid "Specify your archive filter columns on small devices (< 768px)"
+msgstr ""
+
+#: inc/config-options.class.php:489
+msgid ""
+"Specify your archive filter columns on extra small devices (< 576px)"
+msgstr ""
+
+#: inc/config-options.class.php:507
+msgid "Shop Banner"
+msgstr ""
+
+#: inc/config-options.class.php:512 inc/config-options.class.php:979
+msgid "Banner Type"
+msgstr ""
+
+#: inc/config-options.class.php:519 inc/config-options.class.php:987
+msgid "Banner Image"
+msgstr ""
+
+#: inc/config-options.class.php:525 inc/config-options.class.php:996
+msgid "Banner Gallery"
+msgstr ""
+
+#: inc/config-options.class.php:531 inc/config-options.class.php:1005
+msgid "Banner Video"
+msgstr ""
+
+#: inc/config-options.class.php:532 inc/config-options.class.php:1006
+msgid ""
+"Paste YouTube, Vimeo or self hosted video URL then player automatically "
+"will be generated."
+msgstr ""
+
+#: inc/config-options.class.php:538 inc/config-options.class.php:1015
+msgid "Custom Html Content"
+msgstr ""
+
+#: inc/config-options.class.php:552
+msgid "Single Product"
+msgstr ""
+
+#: inc/config-options.class.php:558
+msgid "Specify your product single layout"
+msgstr ""
+
+#: inc/config-options.class.php:565 inc/config-options.class.php:929
+msgid "Tab Layout"
+msgstr ""
+
+#: inc/config-options.class.php:566 inc/config-options.class.php:930
+msgid "Specify your product single tab layout"
+msgstr ""
+
+#: inc/config-options.class.php:573
+msgid "Share"
+msgstr ""
+
+#: inc/config-options.class.php:574
+msgid "Turn Off this option if you want to hide share on single blog"
+msgstr ""
+
+#: inc/config-options.class.php:586
+msgid "Cart Page"
+msgstr ""
+
+#: inc/config-options.class.php:598
+msgid "Product Related"
+msgstr ""
+
+#: inc/config-options.class.php:604
+msgid "Related Product"
+msgstr ""
+
+#: inc/config-options.class.php:605
+msgid ""
+"Turn Off this option if you want to hide related product area on single "
+"product"
+msgstr ""
+
+#: inc/config-options.class.php:610
+msgid "Related Products Algorithm"
+msgstr ""
+
+#: inc/config-options.class.php:611
+msgid "Specify the algorithm of related products"
+msgstr ""
+
+#: inc/config-options.class.php:620 inc/config-options.class.php:724
+#: inc/config-options.class.php:825
+msgid "Enter number of posts per page you want to display"
+msgstr ""
+
+#: inc/config-options.class.php:628 inc/config-options.class.php:732
+#: inc/config-options.class.php:833
+msgid "Post Columns Gutter"
+msgstr ""
+
+#: inc/config-options.class.php:682 inc/config-options.class.php:786
+#: inc/config-options.class.php:887
+msgid "Small Devices "
+msgstr ""
+
+#: inc/config-options.class.php:691 inc/config-options.class.php:795
+#: inc/config-options.class.php:896
+msgid "Extra Small Devices "
+msgstr ""
+
+#: inc/config-options.class.php:711 inc/config-options.class.php:717
+msgid "Product Up Sells"
+msgstr ""
+
+#: inc/config-options.class.php:718
+msgid ""
+"Turn Off this option if you want to hide product up sells area on "
+"single product"
+msgstr ""
+
+#: inc/config-options.class.php:813 inc/config-options.class.php:818
+msgid "Product Cross Sells"
+msgstr ""
+
+#: inc/config-options.class.php:819
+msgid ""
+"Turn Off this option if you want to hide product cross sells area on "
+"cart pages"
+msgstr ""
+
+#: inc/config-options.class.php:915
+msgid "Shop Settings"
+msgstr ""
+
+#: inc/config-options.class.php:937
+msgid "Video URL"
+msgstr ""
+
+#: inc/config-options.class.php:938
+msgid "Enter video url"
+msgstr ""
+
+#: inc/config-options.class.php:967
+msgid "Banner Settings"
+msgstr ""
+
+#: inc/config-options.class.php:973
+msgid "Custom Banner"
+msgstr ""
+
+#: inc/config-options.class.php:974
+msgid "Turn On this option if you want to custom banner on category pages"
+msgstr ""
+
+#: inc/functions/helper.php:313
+msgid "Narrow Category"
+msgstr ""
+
+#: inc/functions/helper.php:317
+msgid ""
+"Enter categories by names to narrow output (Note: only listed "
+"categories will be displayed, divide categories with linebreak (Enter))."
+msgstr ""
+
+#: inc/functions/helper.php:328
+msgid "Show"
+msgstr ""
+
+#: inc/functions/helper.php:331 inc/widgets/price-filter.class.php:165
+msgid "All"
+msgstr ""
+
+#: inc/functions/helper.php:332
+#: templates/shortcodes/product-slider-tabs/config.php:21
+#: templates/shortcodes/product-tabs/config.php:21
+msgid "Sale Off"
+msgstr ""
+
+#: inc/functions/helper.php:333
+#: templates/shortcodes/product-slider-tabs/config.php:28
+#: templates/shortcodes/product-tabs/config.php:28
+msgid "New In"
+msgstr ""
+
+#: inc/functions/helper.php:334
+#: templates/shortcodes/product-slider-tabs/config.php:34
+#: templates/shortcodes/product-tabs/config.php:34
+msgid "Featured"
+msgstr ""
+
+#: inc/functions/helper.php:335
+msgid "Top rated"
+msgstr ""
+
+#: inc/functions/helper.php:336
+msgid "Recent review"
+msgstr ""
+
+#: inc/functions/helper.php:337
+msgid "Best Selling"
+msgstr ""
+
+#: inc/functions/helper.php:338 inc/functions/helper.php:349
+msgid "Narrow Products"
+msgstr ""
+
+#: inc/functions/helper.php:341 inc/functions/helper.php:345
+#: inc/functions/helper.php:359 inc/functions/helper.php:376
+#: inc/functions/helper.php:387
+msgid "Products Filter"
+msgstr ""
+
+#: inc/functions/helper.php:357
+msgid "Enter List of Products"
+msgstr ""
+
+#: inc/functions/helper.php:365
+#: templates/shortcodes/product-categories/config.php:33
+msgid "Order by"
+msgstr ""
+
+#: inc/functions/helper.php:368
+msgid "Date"
+msgstr ""
+
+#: inc/functions/helper.php:369
+msgid "Price"
+msgstr ""
+
+#: inc/functions/helper.php:370
+msgid "Random"
+msgstr ""
+
+#: inc/functions/helper.php:371
+msgid "Sales"
+msgstr ""
+
+#: inc/functions/helper.php:374
+#: templates/shortcodes/product-categories/config.php:41
+msgid "Select how to sort retrieved products."
+msgstr ""
+
+#: inc/functions/helper.php:380
+#: templates/shortcodes/product-categories/config.php:45
+msgid "Sorting"
+msgstr ""
+
+#: inc/functions/helper.php:383
+#: templates/shortcodes/product-categories/config.php:48
+msgid "Descending"
+msgstr ""
+
+#: inc/functions/helper.php:384
+#: templates/shortcodes/product-categories/config.php:49
+msgid "Ascending"
+msgstr ""
+
+#: inc/functions/helper.php:389
+#: templates/shortcodes/product-categories/config.php:52
+msgid "Select sorting order."
+msgstr ""
+
+#: inc/functions/template.php:254
+msgid "In stock"
+msgstr ""
+
+#: inc/functions/template.php:257
+msgid "Out of stock"
+msgstr ""
+
+#: inc/functions/template.php:260
+msgid "On back order"
+msgstr ""
+
+#: inc/settings.class.php:22 inc/settings.class.php:41
+msgid "Grid"
+msgstr ""
+
+#: inc/settings.class.php:29 inc/settings.class.php:48
+#: inc/settings.class.php:77 inc/settings.class.php:95
+#: inc/settings.class.php:114 inc/settings.class.php:136
+#: inc/settings.class.php:168 inc/settings.class.php:204
+msgid "Inherit"
+msgstr ""
+
+#: inc/settings.class.php:62
+msgid "Skin 01"
+msgstr ""
+
+#: inc/settings.class.php:66
+msgid "Skin 02"
+msgstr ""
+
+#: inc/settings.class.php:70
+msgid "Skin 03"
+msgstr ""
+
+#: inc/settings.class.php:88 inc/settings.class.php:104
+#: templates/shortcodes/product-slider-tabs/config.php:53
+#: templates/shortcodes/product-tabs/config.php:53
+msgid "None"
+msgstr ""
+
+#: inc/settings.class.php:89
+msgid "Change Image"
+msgstr ""
+
+#: inc/settings.class.php:90
+msgid "Flip Back"
+msgstr ""
+
+#: inc/settings.class.php:105 inc/swatches.class.php:54
+#: templates/shortcodes/product-slider-tabs/config.php:55
+#: templates/shortcodes/product-tabs/config.php:55
+msgid "Image"
+msgstr ""
+
+#: inc/settings.class.php:106
+msgid "Gallery"
+msgstr ""
+
+#: inc/settings.class.php:107
+msgid "Video"
+msgstr ""
+
+#: inc/settings.class.php:108
+msgid "Custom HTML"
+msgstr ""
+
+#: inc/settings.class.php:125 inc/settings.class.php:147
+msgid "Layout 01"
+msgstr ""
+
+#: inc/settings.class.php:129 inc/settings.class.php:151
+msgid "Layout 02"
+msgstr ""
+
+#: inc/settings.class.php:155
+msgid "Layout 03"
+msgstr ""
+
+#: inc/settings.class.php:159
+msgid "Layout 04"
+msgstr ""
+
+#: inc/settings.class.php:180
+msgid "by Category"
+msgstr ""
+
+#: inc/settings.class.php:181
+msgid "by Tag"
+msgstr ""
+
+#: inc/settings.class.php:182
+msgid "by Category & Tag"
+msgstr ""
+
+#: inc/swatches.class.php:53
+msgid "Color"
+msgstr ""
+
+#: inc/swatches.class.php:81
+msgid "Additional Fields"
+msgstr ""
+
+#: inc/swatches.class.php:101
+msgid "Swatches Value"
+msgstr ""
+
+#: inc/templates.class.php:215
+msgid "Shop Filter"
+msgstr ""
+
+#: inc/templates.class.php:219
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/templates.class.php:339 inc/templates.class.php:354
+msgid "Mini Cart"
+msgstr ""
+
+#: inc/templates.class.php:341
+msgid "Search Product"
+msgstr ""
+
+#: inc/templates.class.php:342 inc/templates.class.php:356
+msgid "Search Product Button"
+msgstr ""
+
+#: inc/templates.class.php:346 inc/templates.class.php:359
+msgid "Wishlist"
+msgstr ""
+
+#: inc/widgets/price-filter.class.php:13
+msgid "G5Plus: Product Price Filter"
+msgstr ""
+
+#: inc/widgets/price-filter.class.php:14
+msgid "Display a product price filter list"
+msgstr ""
+
+#: inc/widgets/price-filter.class.php:19
+#: inc/widgets/product-sorting.class.php:18
+#: templates/shortcodes/product-slider-tabs/config.php:45
+#: templates/shortcodes/product-tabs/config.php:45
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/price-filter.class.php:21
+msgid "Filter by price"
+msgstr ""
+
+#: inc/widgets/price-filter.class.php:25
+msgid "Max price ranges"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:12
+msgid "G5Plus: Product Sorting"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:13
+msgid "Display a product sorting list"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:20
+msgid "Sort by"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:43
+msgid "Default sorting"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:44
+msgid "Sort by popularity"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:45
+msgid "Sort by average rating"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:46
+msgid "Sort by latest"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:47
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:48
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: inc/widgets/product-sorting.class.php:56
+msgid "Relevance"
+msgstr ""
+
+#: templates/banner/image.php:9
+msgid "shop banner"
+msgstr ""
+
+#: templates/cart/mini-cart-icon.php:9
+msgid "Shopping Cart"
+msgstr ""
+
+#: templates/loop/quick-view.php:8
+msgid "Quick view"
+msgstr ""
+
+#: templates/loop/swatches.php:41 templates/single/swatches.php:53
+msgid "Clear"
+msgstr ""
+
+#: templates/quick-view/rating.php:22
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/sale-count-down.php:45
+msgid "Time remaining for sale"
+msgstr ""
+
+#: templates/sale-count-down.php:50
+msgid "DAY"
+msgstr ""
+
+#: templates/sale-count-down.php:54
+msgid "HOUR"
+msgstr ""
+
+#: templates/sale-count-down.php:58
+msgid "MIN"
+msgstr ""
+
+#: templates/sale-count-down.php:62
+msgid "SEC"
+msgstr ""
+
+#: templates/search-product.php:28
+msgid "All Categories"
+msgstr ""
+
+#: templates/search-product.php:37
+msgid "Type to search..."
+msgstr ""
+
+#: templates/search-product.php:37
+msgid "Type and hit enter"
+msgstr ""
+
+#: templates/search-product.php:40
+msgid "Remove search terms"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:9
+msgid "Product Categories"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:12
+msgid "Display product categories loop"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:18
+msgid "Columns Gutter"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:26
+msgid "Total Categories"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:27
+msgid "Enter number of category you want to display"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:36
+msgid "Category order"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:37
+msgid "Name"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:38
+msgid "Include"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:56
+msgid "Hide Empty"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:62
+msgid "Slider Enable"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:69
+#: templates/shortcodes/product-slider-tabs/config.php:150
+#: templates/shortcodes/product-tabs/config.php:167
+#: templates/shortcodes/products-slider/config.php:104
+#: templates/shortcodes/products/config.php:122
+msgid "Columns"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:73
+#: templates/shortcodes/product-slider-tabs/config.php:151
+#: templates/shortcodes/products-slider/config.php:105
+msgid "Slider Options"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:77
+#: templates/shortcodes/product-slider-tabs/config.php:155
+#: templates/shortcodes/product-tabs/config.php:171
+#: templates/shortcodes/products-slider/config.php:109
+#: templates/shortcodes/products/config.php:126
+msgid "Image size"
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:78
+#: templates/shortcodes/product-slider-tabs/config.php:156
+#: templates/shortcodes/product-tabs/config.php:172
+#: templates/shortcodes/products-slider/config.php:110
+msgid ""
+"Enter image size (Example: \"thumbnail\", \"medium\", \"large\", \"full"
+"\" or other sizes defined by theme). Alternatively enter size in pixels "
+"(Example: 300x400)."
+msgstr ""
+
+#: templates/shortcodes/product-categories/config.php:81
+#: templates/shortcodes/product-slider-tabs/config.php:159
+#: templates/shortcodes/product-slider-tabs/config.php:169
+#: templates/shortcodes/product-slider-tabs/config.php:179
+#: templates/shortcodes/product-tabs/config.php:176
+#: templates/shortcodes/product-tabs/config.php:186
+#: templates/shortcodes/product-tabs/config.php:196
+#: templates/shortcodes/products-slider/config.php:113
+#: templates/shortcodes/products-slider/config.php:123
+#: templates/shortcodes/products-slider/config.php:133
+#: templates/shortcodes/products/config.php:131
+#: templates/shortcodes/products/config.php:141
+#: templates/shortcodes/products/config.php:151
+msgid "Image Size"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:9
+#: templates/shortcodes/product-slider-tabs/config.php:17
+msgid "Product Slider Tabs"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:10
+msgid "Display slider of products tab"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:51
+#: templates/shortcodes/product-tabs/config.php:51
+msgid "Icon library"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:54
+#: templates/shortcodes/product-tabs/config.php:54
+msgid "Icon"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:58
+#: templates/shortcodes/product-tabs/config.php:58
+msgid "Select icon library."
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:72
+#: templates/shortcodes/product-tabs/config.php:72
+msgid "Tabs Align"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:120
+#: templates/shortcodes/product-tabs/config.php:129
+#: templates/shortcodes/products-slider/config.php:72
+#: templates/shortcodes/products/config.php:82
+msgid "Product Per Page"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:121
+#: templates/shortcodes/product-tabs/config.php:130
+#: templates/shortcodes/products-slider/config.php:73
+#: templates/shortcodes/products/config.php:83
+msgid "Enter number of product per page you want to display. Default 10"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:127
+#: templates/shortcodes/product-tabs/config.php:136
+#: templates/shortcodes/products-slider/config.php:79
+#: templates/shortcodes/products/config.php:89
+msgid "Offset posts"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:128
+#: templates/shortcodes/product-tabs/config.php:137
+#: templates/shortcodes/products-slider/config.php:80
+#: templates/shortcodes/products/config.php:90
+msgid ""
+"Start the count with an offset. If you have a block that shows 4 posts "
+"before this one, you can make this one start from the 5'th post (by "
+"using offset 4)"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:142
+#: templates/shortcodes/product-tabs/config.php:159
+msgid "Append Tabs"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:145
+#: templates/shortcodes/product-tabs/config.php:162
+msgid ""
+"Change where the tabs are attached (Selector, htmlString, Array, "
+"Element, jQuery object)"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:163
+#: templates/shortcodes/product-tabs/config.php:180
+#: templates/shortcodes/products-slider/config.php:117
+#: templates/shortcodes/products/config.php:135
+msgid "Image ratio width"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:164
+#: templates/shortcodes/product-tabs/config.php:181
+#: templates/shortcodes/products-slider/config.php:118
+#: templates/shortcodes/products/config.php:136
+msgid "Enter width for image ratio"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:173
+#: templates/shortcodes/product-tabs/config.php:190
+#: templates/shortcodes/products-slider/config.php:127
+#: templates/shortcodes/products/config.php:145
+msgid "Image ratio height"
+msgstr ""
+
+#: templates/shortcodes/product-slider-tabs/config.php:174
+#: templates/shortcodes/product-tabs/config.php:191
+#: templates/shortcodes/products-slider/config.php:128
+#: templates/shortcodes/products/config.php:146
+msgid "Enter height for image ratio"
+msgstr ""
+
+#: templates/shortcodes/product-tabs/config.php:9
+#: templates/shortcodes/product-tabs/config.php:17
+msgid "Product Tabs"
+msgstr ""
+
+#: templates/shortcodes/product-tabs/config.php:10
+msgid "Display list of products tab"
+msgstr ""
+
+#: templates/shortcodes/product-tabs/config.php:79
+#: templates/shortcodes/products/config.php:31
+msgid "Product Layout"
+msgstr ""
+
+#: templates/shortcodes/product-tabs/config.php:144
+#: templates/shortcodes/products/config.php:97
+msgid "Specify your post paging mode"
+msgstr ""
+
+#: templates/shortcodes/products-slider/config.php:9
+msgid "Products Slider"
+msgstr ""
+
+#: templates/shortcodes/products-slider/config.php:10
+msgid "Display slider of products"
+msgstr ""
+
+#: templates/shortcodes/products-slider/config.php:23
+#: templates/shortcodes/products/config.php:23
+msgid "Category Filter Align"
+msgstr ""
+
+#: templates/shortcodes/products-slider/config.php:87
+#: templates/shortcodes/products/config.php:105
+msgid "Specify your product animation"
+msgstr ""
+
+#: templates/shortcodes/products/config.php:9
+msgid "Products"
+msgstr ""
+
+#: templates/shortcodes/products/config.php:12
+msgid "Display list of products"
+msgstr ""
+
+#: templates/shortcodes/products/config.php:127
+msgid ""
+"Enter image size (Example: \"woocommerce_thumbnail\", \"thumbnail\", "
+"\"medium\", \"large\", \"full\" or other sizes defined by theme). "
+"Alternatively enter size in pixels (Example: 300x400)."
+msgstr ""
+
+#: templates/single/swatches.php:23
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: templates/toolbar/switch_layout.php:10
+msgid "Grid View"
+msgstr ""
+
+#: templates/toolbar/switch_layout.php:11
+msgid "List View"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:85
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:29
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:41
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:30
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:30
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:34
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:36
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:87
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:85
+msgid "You may also like&hellip;"
+msgstr ""

@@ -1,0 +1,65 @@
+.woocommerce-widget-layered-nav-dropdown select {
+  width: 100%;
+}
+
+
+.woocommerce .woocommerce-widget-layered-nav ul.woocommerce-widget-layered-nav-list {
+  li.woocommerce-widget-layered-nav-list__item--chosen {
+    .g5shop__layered-nav-item {
+      &:before {
+        display: none;
+      }
+      > span {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .g5shop__layered-nav-item {
+    padding-left: 25px;
+    position: relative;
+    color: inherit;
+    > span {
+      background: #e8e8e8;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      @include border-radius(4px);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      @include transform(translateY(-50%));
+      @include transition(all .3s ease-out);
+      &:before {
+        font-family: 'Font Awesome 5 Pro';
+        content: "\f00c";
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        color: #fff;
+        font-size: 11px;
+
+        font-weight: 400;
+        position: absolute;
+        top: 1px;
+        line-height: 16px;
+        left: 3px;
+        opacity: 0;
+        @include transition(all .3s ease-out);
+      }
+    }
+    &:hover {
+      color: inherit;
+      > span {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.g5shop__product-gallery-video {
+  &:hover {
+    @extend %accent-text-color;
+  }
+}
+
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+  &:hover {
+    &:before {
+      @extend %accent-border-color;
+    }
+
+    &:after {
+      @extend %accent-bg-color;
+    }
+  }
+}

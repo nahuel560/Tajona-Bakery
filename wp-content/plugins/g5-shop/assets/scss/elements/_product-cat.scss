@@ -1,0 +1,41 @@
+.g5shop__loop-product-cat {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  margin: 0;
+  @include transition(color .3s);
+  a {
+    color: inherit !important;
+  }
+}
+
+.g5shop__product-cat-featured {
+  .g5core__entry-thumbnail {
+    border: 1px solid #eee;
+  }
+}
+
+
+.woocommerce-loop-category__title {
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  @include transition(color .3s);
+  margin: 0;
+  mark {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+  }
+  a {
+    color: inherit !important;
+  }
+}
+
+.g5shop__product-cat-info {
+  margin-top: 20px;
+}

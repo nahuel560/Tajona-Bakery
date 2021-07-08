@@ -1,0 +1,14 @@
+.g5shop__filter-button {
+  color: inherit;
+  &.active,
+  &:hover,
+  &:focus,
+  &:active {
+    @extend %accent-text-color;
+  }
+}
+.woocommerce .products ul.g5core__cate-filer{
+  padding-bottom: 0;
+}
+
+

@@ -1,0 +1,159 @@
+.woocommerce div.product.g5shop__product-gallery-horizontal div.images {
+  .flex-control-thumbs {
+    margin-top: 5px;
+    overflow: visible;
+
+    .slick-list {
+      margin: 0 -5px;
+    }
+
+    .slick-slide > div {
+      padding: 5px;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      @include transform(translateY(-50%));
+      margin: 0;
+      opacity: 0;
+      @include transition(opacity .3s);
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    &:hover {
+      .slick-arrow {
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .woocommerce div.product.g5shop__product-gallery-vertical {
+    &.g5shop__product-gallery-has-thumb {
+      div.images {
+        padding-left: 110px;
+      }
+      .g5shop__single-product-summary {
+        .g5shop__loop-product-flash {
+          left: 120px;
+        }
+      }
+    }
+
+    div.images {
+      .flex-control-thumbs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        //right: 100%;
+        width: 100px;
+        margin-right: 6px;
+
+        .slick-slide {
+          margin-bottom: 10px;
+
+          > div {
+            padding: 0;
+          }
+        }
+
+        .slick-list {
+          margin: 0;
+        }
+
+        .slick-arrow {
+          position: absolute;
+          margin: 0;
+          opacity: 0;
+          @include transition(opacity .3s);
+        }
+
+        .slick-prev {
+          top: 0;
+        }
+
+        .slick-next {
+          bottom: 0;
+          @include transform(translateY(-50%));
+        }
+
+        &:hover {
+          .slick-arrow {
+            opacity: 1;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .woocommerce div.product.g5shop__product-gallery-vertical div.images {
+    .flex-control-thumbs {
+      margin-top: 5px;
+      overflow: visible;
+
+      .slick-list {
+        margin: 0 -5px;
+      }
+
+      .slick-slide > div {
+        padding: 5px;
+      }
+
+      .slick-arrow {
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        margin: 0;
+        opacity: 0;
+        @include transition(opacity .3s);
+      }
+
+    }
+  }
+}
+
+.woocommerce div.product div.images {
+  .flex-control-thumbs {
+    li {
+      width: 100%;
+
+      img {
+        opacity: 1;
+        border: 1px solid transparent;
+        @include transition(all .3s);
+
+        &.flex-active,
+        &:hover {
+          opacity: 0.3;
+          border-color: #ababab;
+        }
+
+      }
+    }
+  }
+}
+
+.pswp {
+  z-index: 999999;
+
+  .pswp__button--arrow--left,
+  .pswp__button--arrow--right {
+    background: none !important;
+  }
+}

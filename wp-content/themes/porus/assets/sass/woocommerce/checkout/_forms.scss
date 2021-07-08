@@ -1,0 +1,42 @@
+.woocommerce .col2-set {
+  .col-1,
+  .col-2 {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.woocommerce form {
+  font-size: 16px;
+  p {
+    margin-bottom: 25px;
+  }
+  .form-row {
+    display: block;
+    padding: 0;
+    margin: 0 0 25px 0;
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    textarea {
+      height: 8em;
+    }
+
+  }
+}
+
+
+
+
+
+.woocommerce-billing-fields,
+.woocommerce-additional-fields,
+.woocommerce-shipping-fields {
+  > h3 {
+    @include wc-heading-title();
+  }
+}

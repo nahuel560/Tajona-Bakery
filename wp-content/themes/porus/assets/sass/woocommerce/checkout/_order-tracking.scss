@@ -1,0 +1,16 @@
+div.woocommerce form.woocommerce-form-track-order {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    p.form-row {
+        label {
+            @extend %secondary-color;
+            text-transform: uppercase;
+        }
+        button {
+            border-radius: 23px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            @extend %secondary-bg-color;
+        }
+    }
+}

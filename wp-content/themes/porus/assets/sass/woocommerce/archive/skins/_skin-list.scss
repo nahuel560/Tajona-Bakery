@@ -1,0 +1,24 @@
+.g5shop__product-list {
+  .g5core__entry-thumbnail:after {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .g5shop__product-list {
+    .g5shop__product-info {
+      margin-left: 20px;
+    }
+  }
+
+  body.has-sidebar {
+    .g5shop__product-list {
+      .g5shop__product-featured {
+        @include flex(0 0 230px);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,411 @@
+.rtb-booking-form {
+    fieldset {
+        float: left;
+        width: 50%;
+        label {
+            display: inline-block;
+            font-size: 12px;
+            @extend %primary-color;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: absolute;
+            top: 16px;
+        }
+        .rtb-textarea {
+            label {
+                position: static;
+                display: block;
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+        input, select, textarea {
+            max-width: 270px;
+            width: 100%;
+            padding-left: 50px;
+            @extend %accent-foreground-color;
+            text-align: right;
+            padding-right: 0;
+            border: none;
+            border-bottom: 1px dashed;
+            @extend %primary-border-color;
+            @include border-radius(0);
+            font-size: 15px;
+        }
+        textarea {
+            padding-left: 0;
+            text-align: left;
+            padding-top: 3px;
+            max-width: 100%;
+        }
+        .rtb-text,
+        .rtb-select {
+            position: relative;
+        }
+        select#rtb-party {
+            padding-left: 220px;
+            padding-right: 30px;
+            option {
+                @extend %heading-color;
+                &:hover {
+                    @extend %primary-bg-color;
+                }
+            }
+        }
+        .rtb-error{
+            font-size: 12px;
+            position: absolute;
+            top:50px;
+            left: 5px;
+            color: #f00;
+            background:transparent;
+        }
+        legend{
+            display: none;
+        }
+        > div{
+            margin-top: 10px;
+        }
+    }
+    button {
+        width: 100%;
+        max-width: 230px;
+        border-radius: 30px;
+        background-color: transparent;
+        text-transform: uppercase;
+        margin-top: 16px;
+        height: 60px;
+        border: 2px solid;
+        @extend %primary-border-color;
+        &:hover {
+            @extend %secondary-bg-color;
+            @extend %accent-foreground-color;
+            border: 2px solid;
+            @extend %secondary-border-color;
+        }
+    }
+    .add-message {
+       display: none;
+    }
+    div.message{
+        margin-top: 38px;
+        position: relative;
+        top: auto;
+        left: calc(-100% - 23px);;
+        width: calc(200% + 23px);
+
+    }
+    fieldset.contact {
+        text-align: left;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 992px) {
+    .booking-max-width-570{
+        .rtb-booking-form {
+            form{
+                max-width: 570px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+.btn-white-booking {
+    button:hover {
+        @extend %accent-foreground-bg-color;
+        @extend %primary-color;
+        border: 2px solid;
+        @extend %accent-foreground-border-color;
+    }
+}
+
+#rtb-date_root {
+    .picker__box {
+        background: url("./assets/images/bg-popup-date.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .picker__nav--next:hover,
+    .picker__nav--prev:hover {
+        background-color: transparent;
+    }
+    table.picker__table {
+        .picker--focused .picker__day--highlighted,
+        .picker__day--highlighted:hover,
+        .picker__day--infocus:hover,
+        .picker__day--outfocus:hover {
+            @extend %primary-bg-color;
+        }
+        .picker__day--highlighted {
+            @extend %primary-border-color;
+            @extend %primary-bg-color;
+        }
+        .picker__day--today:before {
+           border: none;
+        }
+        td{
+            font-size: 1.125rem;
+            .picker__day:hover{
+                @extend %accent-foreground-color;
+            }
+        }
+    }
+    .picker__footer {
+        @include d-flex();
+        .picker__button--clear,
+        .picker__button--close,
+        .picker__button--today {
+            padding: 0;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border: 1px solid;
+            @extend %primary-border-color;
+            color: $color_secondary !important;
+            font-size: $font_size_md;
+            background-color: transparent;
+            &:hover {
+                @extend %secondary-border-color;
+                @extend %secondary-bg-color;
+                color: #fff !important;
+            }
+        }
+        .picker__button--today {
+            &:before {
+                border-top: .66em solid;
+                @extend %secondary-border-color;
+            }
+            &:hover:before {
+                border-top: .66em solid;
+                @extend %accent-foreground-border-color;
+            }
+        }
+        .picker__button--clear {
+            &:before {
+                border-top: 3px solid;
+                @extend %secondary-border-color;
+            }
+            &:hover:before {
+                border-top: 3px solid;
+                @extend %accent-foreground-border-color;
+            }
+        }
+        .picker__button--close {
+            &:before {
+                @extend %secondary-color;
+            }
+            &:hover:before {
+                @extend %accent-foreground-color;
+            }
+        }
+        button:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+div.picker--time {
+    .picker__button--clear {
+        width: 60%;
+        margin-top: 30px;
+        border: 2px solid;
+        @extend %primary-border-color;
+        padding: 0;
+        @extend %secondary-color;
+        font-weight: bold;
+        &:focus,
+        &:hover {
+            @extend %secondary-bg-color;
+            @extend %secondary-border-color;
+        }
+        &:before {
+            border-top: 3px solid;
+            @extend %secondary-border-color;
+        }
+    }
+    ul.picker__list {
+        .picker--focused .picker__list-item--highlighted,
+        .picker__list-item--highlighted:hover,
+        .picker__list-item:hover,
+        li.picker__list-item--highlighted {
+            @extend %primary-bg-color;
+            @extend %accent-foreground-color;
+        }
+        .picker__list-item--highlighted,
+        .picker__list-item:hover {
+            @extend %primary-border-color;
+        }
+        .picker__list-item {
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+            @extend %border-color;
+        }
+    }
+}
+
+.custom-booking-form {
+    .rtb-booking-form {
+        fieldset {
+            padding: 0;
+            float: none;
+            width: 100%;
+            text-align: center;
+            .rtb-text,
+            .rtb-select {
+                @include d-inline-flex();
+                width: 25%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            label {
+                @extend %heading-color;
+            }
+            input, select, textarea {
+                @extend %accent-text-color;
+            }
+            > div {
+                margin-top: 0;
+            }
+        }
+        .add-message {
+            a {
+                @extend %heading-color;
+                font-weight: bold;
+            }
+        }
+        div.message{
+            margin-top: 38px;
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        button {
+            @extend %secondary-color;
+            height: 60px;
+            margin-top: 36px;
+            &:hover {
+                @extend %secondary-bg-color;
+                @extend %accent-foreground-color;
+                border: 2px solid;
+                @extend %secondary-border-color;
+            }
+        }
+    }
+}
+@media (max-width: 1199px) and (min-width: 500px) {
+    .rtb-booking-form fieldset {
+        select#rtb-party {
+            padding-left: 200px;
+        }
+    }
+    .custom-booking-form{
+        .rtb-booking-form fieldset {
+            select#rtb-party {
+                padding-left: 160px;
+            }
+        }
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .rtb-booking-form fieldset {
+        select#rtb-party {
+            padding-left: 170px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .rtb-booking-form {
+        div.message{
+            left: calc(-100% - 30px);;
+            width: calc(200% + 30px);
+
+        }
+    }
+    .rtb-booking-form fieldset{
+        &.reservation{
+            text-align: left;
+        }
+        &.contact{
+            text-align: right;
+        }
+    }
+    .custom-booking-form {
+        .rtb-booking-form {
+            fieldset {
+                &.reservation,
+                &.contact{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .custom-booking-form {
+        .rtb-booking-form {
+            fieldset {
+                .rtb-text,
+                .rtb-select {
+                    width: auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) and (min-width: 500px) {
+    .custom-booking-form {
+        .rtb-booking-form {
+            fieldset {
+            float: left;
+            width: 50%;
+            }
+            div.message{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 499px) {
+    .custom-booking-form {
+        .rtb-booking-form {
+            fieldset {
+                .rtb-text,
+                .rtb-select {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            div.message{
+                width: 100%;
+            }
+        }
+    }
+    div.rtb-booking-form {
+        fieldset.reservation,
+        fieldset.contact {
+            text-align: center;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        select#rtb-party{
+            padding-left: 80%;
+        }
+    }
+    .rtb-booking-form fieldset input,
+    .rtb-booking-form fieldset select,
+    .rtb-booking-form fieldset textarea{
+        max-width: 100%;
+    }
+    .rtb-booking-form div.message{
+        width: auto;
+        left: auto;
+    }
+}

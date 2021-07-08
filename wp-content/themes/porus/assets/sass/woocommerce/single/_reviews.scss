@@ -1,0 +1,95 @@
+.woocommerce #reviews {
+    #comments {
+        margin-bottom: 55px;
+        .woocommerce-Reviews-title {
+            display: none;
+        }
+        ol.commentlist {
+            padding-left: 0;
+            li {
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                img.avatar {
+                    width: 70px;
+                    padding: 0;
+                    border-color: transparent;
+                    @include border-radius(50%);
+                }
+
+                .comment-text {
+                    margin-left: 100px;
+                    padding: 0;
+                    border-color: transparent;
+                    p.meta {
+                        font-size: 14px;
+                        color: #a1a1a1;
+                        margin-bottom: 10px;
+                        .woocommerce-review__author {
+                            font-size: 16px;
+                            font-weight: bold;
+                            @extend %secondary-color;
+                        }
+                    }
+
+                    .star-rating {
+                        float: none;
+                        font-size: 12px;
+                        width: 84px;
+                        margin-bottom: 10px;
+                    }
+                    .description {
+                        p:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    #review_form_wrapper {
+        .comment-reply-title {
+            display: block;
+            font-weight: bold;
+            font-size: 18px;
+            @extend %secondary-color;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            text-align: center;
+
+        }
+        label {
+            margin-bottom: 0.25rem;
+        }
+        p {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .comment-form-comment,
+        .comment-form-author,
+        .comment-form-email {
+            margin-bottom: 50px;
+        }
+
+        .comment-form {
+            .comment-form-email,
+            .comment-form-author {
+                input {
+                    height: 20px;
+                    line-height: 20px;
+                }
+            }
+            #comment {
+                padding: 0;
+            }
+        }
+    }
+}

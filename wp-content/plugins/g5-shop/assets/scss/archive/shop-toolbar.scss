@@ -1,0 +1,139 @@
+@import "toolbar/filter";
+@import "toolbar/filter-list";
+@import "toolbar/ordering";
+@import "toolbar/result-count";
+
+.g5shop__shop-toolbar {
+  &.boxed {
+    .container {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &.stretched_content,
+  &.stretched {
+    .g5shop__shop-toolbar-bottom-inner {
+      padding: 10px 0;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .g5shop__shop-toolbar {
+    &.stretched_content {
+      .container {
+        max-width: 95%;
+      }
+    }
+  }
+}
+
+
+
+.g5shop__shop-toolbar-bottom-inner {
+  @include d-flex();
+  @include align-items-center();
+}
+
+.g5shop__shop-toolbar-left {
+  @include flex-fill();
+}
+
+.g5shop__shop-toolbar-right {
+  @include flex-shrink-0();
+}
+
+
+@media (min-width: (992px)) {
+  .g5shop__shop-toolbar-mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .g5shop__shop-toolbar-bottom-inner {
+    @include flex-wrap();
+  }
+
+  .g5shop__shop-toolbar-top,
+  .g5shop__shop-toolbar-bottom {
+    display: none;
+  }
+
+
+  .g5shop__shop-toolbar-left,
+  .g5shop__shop-toolbar-right {
+    margin: 5px 0;
+  }
+}
+
+
+/*@media (max-width: 767px) {
+  .g5shop__archive-filter-content {
+    padding-top: 20px;
+    .widget {
+      margin: 0 0 10px;
+      padding-bottom: 10px;
+    }
+  }
+}*/
+
+.g5shop__archive-filter-content {
+/*  .widget {
+    .widget-title {
+      padding-bottom: 0;
+      border-bottom: none;
+      margin-bottom: 1.5rem;
+      &:before {
+        display: none;
+      }
+    }
+    ul li {
+      border: none !important;
+    }
+  }*/
+
+  /*ul.g5shop__price-filter li,
+  ul.g5shop__product-sorting li,
+  .woocommerce-widget-layered-nav.woocommerce-widget-layered-nav .woocommerce-widget-layered-nav-list li,
+  .widget_archive ul li,
+  .widget_categories ul li,
+  .widget_nav_menu ul li,
+  .widget_pages ul li,
+  .widget_product_categories ul li {
+    @include d-flex();
+    @include align-items-center();
+
+    .count {
+      position: static;
+      width: auto;
+      height: auto;
+      margin-left: 10px;
+      background-color: transparent;
+      color: inherit;
+      font-size: inherit;
+      &:before {
+        content: '(';
+      }
+      &:after {
+        content: ')';
+      }
+    }
+  }*/
+
+
+
+}
+
+
+.g5shop__archive-filters {
+  margin-top: 20px;
+  .widget {
+    margin-bottom: 0;
+  }
+}

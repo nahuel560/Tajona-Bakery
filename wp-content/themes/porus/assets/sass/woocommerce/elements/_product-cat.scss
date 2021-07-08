@@ -1,0 +1,9 @@
+.g5shop__loop-product-cat {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  @extend %text-color;
+  &:hover {
+    @extend %accent-text-color;
+  }
+}

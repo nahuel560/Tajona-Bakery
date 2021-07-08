@@ -1,0 +1,17 @@
+.g5shop__swatch-text {
+  .g5shop__swatches-item {
+    @extend %caption-color;
+    &.g5shop__sw-selected,
+    &:hover {
+      @extend %heading-color;
+    }
+  }
+}
+
+.g5shop__reset_variations {
+  @extend %caption-color;
+  &:hover {
+    @extend %heading-color;
+  }
+}
+

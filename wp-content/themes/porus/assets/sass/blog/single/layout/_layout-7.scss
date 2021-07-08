@@ -1,0 +1,13 @@
+body.no-sidebar {
+  .g5blog__single-featured-full {
+    > .container {
+      max-width: ($container_width * (100 - $sidebar_width)/100);
+    }
+  }
+}
+
+.g5blog__single-featured-full .g5blog__single-meta-top ul.g5blog__post-meta {
+  li.meta-author span {
+    color: #fff !important;
+  }
+}

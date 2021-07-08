@@ -1,0 +1,30 @@
+.woocommerce .cart-collaterals {
+  .cart_totals,
+  .cross-sells {
+    margin-top: 3rem;
+  }
+
+  .wc-proceed-to-checkout {
+    padding-bottom: 0;
+    a.checkout-button {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals {
+  table {
+    tr td {
+      text-align: right;
+    }
+
+    .shipping-calculator-button {
+      color: inherit;
+    }
+  }
+
+  ul#shipping_method li input {
+    margin-top: 6px;
+  }
+}
+

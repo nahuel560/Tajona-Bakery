@@ -1,0 +1,14 @@
+.g5shop__loop-product-title {
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  @include transition(color .3s);
+  margin: 0;
+  a {
+    color: inherit !important;
+  }
+}
+
+
+

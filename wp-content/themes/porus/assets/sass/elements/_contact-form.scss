@@ -1,0 +1,159 @@
+.contact-reservation {
+	input[type=text], input[type=email], input[type=date], select {
+		width: 100%;
+		border: none;
+		border-bottom: 1px dashed;
+		@extend %primary-border-color;
+		border-radius: 0;
+		@extend %accent-text-color;
+		padding: 4px 0 0 0;
+		text-align: right;
+		font-size: 15px;
+	}
+	.row {
+		max-width: 901px;
+		margin: 0 auto;
+	}
+	.column {
+		margin-top: 20px;
+		> .item-res {
+			width: 100%;
+			position: relative;
+			margin: 0 auto;
+			.title {
+				position: absolute;
+				top: 38%;
+				@extend %heading-color;
+				font-size: $font_size_xs;
+				font-weight: 700;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+	}
+	.item-res-btn {
+		margin-top: 60px;
+		width: 100%;
+		.btn {
+			height: 60px;
+			@extend %primary-border-color;
+			@extend %secondary-color;
+			background: transparent;
+			&:hover {
+				@extend %secondary-bg-color;
+				@extend %accent-foreground-color;
+				@extend %accent-foreground-border-color;
+			}
+		}
+	}
+	input::-webkit-inner-spin-button {
+		display: none;
+	}
+	input[type=text], input[type=email] {
+		padding-left: 80px;
+	}
+	select {
+		background-image: none;
+	}
+	.item-res:not(.table) select {
+		padding-left: 77%;
+	}
+	.item-res.table select {
+		padding-left: 84%;
+	}
+	.wpcf7-not-valid-tip {
+		font-size: $font_size_xs;
+		text-align: left;
+		padding-top: 7px;
+	}
+}
+
+.contact-reservation-2-col {
+	&.contact-reservation {
+		input[type=text], input[type=email], input[type=date], select {
+			@extend %accent-foreground-color;
+			option {
+				@extend %heading-color;
+			}
+		}
+		.row {
+			max-width: 570px;
+		}
+		.column {
+
+			.title {
+				@extend %primary-color;
+			}
+
+		}
+		.item-res-btn {
+			.btn {
+				@extend %accent-foreground-color;
+				&:hover {
+					@extend %accent-foreground-bg-color;
+					@extend %primary-color;
+					@extend %accent-foreground-border-color;
+				}
+			}
+		}
+		input::-webkit-calendar-picker-indicator:hover {
+			background: transparent;
+		}
+		@-webkit-keyframes autofill {
+			to {
+				@extend %accent-foreground-color;
+				background: transparent;
+			}
+		}
+
+		input:-webkit-autofill {
+			-webkit-animation-name: autofill;
+			-webkit-animation-fill-mode: both;
+		}
+	}
+	~ div.wpcf7-response-output {
+		@extend %accent-foreground-color;
+	}
+}
+
+@media (min-width: 576px) {
+	.contact-reservation-2-col {
+		.column:last-child {
+			padding-right: 0;
+		}
+		.column:first-child {
+			padding-left: 0;
+		}
+	}
+	.contact-reservation {
+		.column {
+			> .item-res {
+				max-width: 270px;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) and (min-width: 376px) {
+	.contact-reservation {
+		.item-res:not(.table) select {
+			padding-left: 84%;
+		}
+		.item-res.table select {
+			padding-left: 90%;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+	.contact-reservation-3-col {
+		.item-res:not(.table) select {
+			padding-left: 65%;
+		}
+		.item-res.table select {
+			padding-left: 75%;
+		}
+	}
+}

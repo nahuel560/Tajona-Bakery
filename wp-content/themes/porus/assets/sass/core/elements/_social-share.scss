@@ -1,0 +1,16 @@
+.g5core__share-label {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+ul.g5core__share-list {
+	li {
+		@extend %accent-text-color;
+		font-size: 15px;
+		&:hover {
+			@extend %primary-color
+		}
+	}
+}

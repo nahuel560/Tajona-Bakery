@@ -1,0 +1,27 @@
+@import "layout/layout";
+@import "meta";
+@import "title";
+@import "block-title";
+@import "related";
+
+.g5blog__single {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.g5blog__single + .author-info-wrap {
+    margin-top: 65px;
+}
+
+.g5blog__single + .comments-area {
+    margin-top: 60px;
+}
+
+.post-navigation + .g5blog__single-related-wrap {
+    margin-top: 62px;
+}
+
+.post-navigation + .comments-area {
+    margin-top: 65px;
+}
+

@@ -1,0 +1,38 @@
+.stock-status {
+  @include d-inline-flex();
+  font-size: 0.9375rem;
+  @include align-items-center();
+  &:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Pro';
+    margin-right: 5px;
+    font-weight: 900;
+  }
+  &.in-stock {
+    &:before {
+      content: "\f058";
+      color: #8cc63e;
+    }
+  }
+
+  &.out-of-stock {
+    &:before {
+      color: #a44;
+      content: "\f5ec";
+    }
+  }
+
+  &.on-back-order {
+    &:before {
+      color: #eaa600;
+      content: "\f1da";
+    }
+  }
+
+}

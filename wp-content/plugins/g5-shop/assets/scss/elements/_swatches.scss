@@ -1,0 +1,115 @@
+.g5shop__loop-swatches {
+  margin-top: 10px;
+}
+.g5shop__swatch {
+  @include d-flex();
+  @include flex-wrap();
+  @include align-items-center();
+  + .g5shop__swatch {
+    margin-top: 10px;
+  }
+}
+
+.g5shop__swatches-item {
+  margin-right: .5rem;
+  cursor: pointer;
+  @include transition(all .5s ease);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.g5shop__sw-disabled {
+  opacity: .4;
+  cursor: default
+}
+
+
+
+.g5shop__swatch-color {
+  .g5shop__swatches-item {
+    width: 18px;
+    height: 18px;
+    background-color: #e8e8e8;
+    @include border-radius(50%);
+    &.g5shop__sw-selected,
+    &:hover {
+      @include box-shadow(0 0 0 2px #fff, 0 0 0 3px #aaa);
+    }
+  }
+}
+
+.g5shop__swatch-image {
+  .g5shop__swatches-item {
+    width: 18px;
+    height: 18px;
+    background-color: #e8e8e8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include border-radius(50%);
+    &.g5shop__sw-selected,
+    &:hover {
+      @include box-shadow(0 0 0 2px #fff, 0 0 0 3px #aaa);
+    }
+  }
+}
+
+.g5shop__swatch-text {
+  .g5shop__swatches-item {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+.g5shop__reset_variations {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+}
+
+.g5shop__single-swatches {
+
+  .g5shop__swatches-item {
+    margin-right: 1rem;
+  }
+
+  .g5shop__swatch-color {
+    .g5shop__swatches-item {
+      width: 24px;
+      height: 24px;
+      &.g5shop__sw-selected,
+      &:hover {
+        @include box-shadow(0 0 0 3px #fff, 0 0 0 4px #aaa);
+      }
+    }
+  }
+
+  .g5shop__swatch-image {
+    .g5shop__swatches-item {
+      width: 24px;
+      height: 24px;
+      &.g5shop__sw-selected,
+      &:hover {
+        @include box-shadow(0 0 0 3px #fff, 0 0 0 4px #aaa);
+      }
+    }
+  }
+  .g5shop__swatch-text {
+    .g5shop__swatches-item {
+      font-size: 24px;
+    }
+  }
+
+  .g5shop__swatch {
+    @include d-inline-flex();
+  }
+
+  .g5shop__swatch + select {
+    display: none !important;
+  }
+
+}

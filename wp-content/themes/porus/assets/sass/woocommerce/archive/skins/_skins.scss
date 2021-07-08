@@ -1,0 +1,36 @@
+.g5shop__product-item {
+  .g5shop__loop-product-cat + .price {
+    margin-top: 11px;
+  }
+
+  .g5shop__loop-product-title + .price {
+    margin-top: 9px;
+  }
+
+  .g5shop__loop-product-cat {
+    margin-top: 13px;
+  }
+
+  .g5shop__product-info .star-rating {
+    margin-top: 13px;
+  }
+
+  .price + .g5shop__loop-swatches {
+    margin-top: 14px;
+  }
+
+  .star-rating + .g5shop__loop-swatches {
+    margin-top: 20px;
+  }
+
+  .g5core__entry-thumbnail {
+    background-color: transparent;
+  }
+
+}
+
+
+
+@import "skin-classic";
+@import "skin-list";
+//@import "skin-modern";

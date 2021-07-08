@@ -1,0 +1,12 @@
+.g5shop__layout-list {
+  .g5shop__product-item-inner {
+    @extend %border-color;
+  }
+
+
+  .g5shop__product-cat-item-inner {
+    @extend %border-color;
+  }
+}
+
+

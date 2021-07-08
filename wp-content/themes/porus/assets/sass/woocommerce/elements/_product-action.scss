@@ -1,0 +1,72 @@
+.g5shop__add-to-cart {
+    @extend %secondary-bg-color;
+    color: contrast-color($color_secondary);
+    @include border-radius(50%);
+    &:hover,
+    &:active,
+    &:focus {
+        @extend %accent-bg-color;
+        @extend %accent-foreground-color;
+    }
+
+    .add_to_cart_button,
+    .product_type_grouped,
+    .product_type_external,
+    .added_to_cart,
+    .product_out_of_stock,
+    .product_type_variable {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.g5shop__quick-view {
+    @extend %secondary-bg-color;
+    color: contrast-color($color_secondary);
+    width: 50px;
+    height: 50px;
+    @include border-radius(50%);
+    &:hover,
+    &:active,
+    &:focus {
+        @extend %accent-bg-color;
+        @extend %accent-foreground-color;
+    }
+}
+
+.yith-wcwl-add-to-wishlist {
+    a {
+        width: 50px;
+        height: 50px;
+        @include border-radius(50% !important);
+        @extend %secondary-bg-color;
+        color: contrast-color($color_secondary);
+        &:hover,
+        &:active,
+        &:focus {
+            @extend %accent-bg-color;
+            @extend %accent-foreground-color;
+        }
+    }
+}
+
+.g5shop__product-list-actions .compare,
+.g5shop__product-actions .compare {
+    width: 50px;
+    height: 50px;
+    @include border-radius(50%);
+
+}
+
+.g5shop__product-actions .compare {
+    @extend %secondary-bg-color;
+    color: contrast-color($color_secondary);
+    &:hover,
+    &:active,
+    &:focus {
+        @extend %accent-bg-color;
+        color: contrast-color($color_secondary);
+    }
+}
+
+

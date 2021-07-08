@@ -1,0 +1,13 @@
+.g5blog__block-title {
+  margin-bottom: 50px;
+  @extend %font-primary;
+  font-size: 36px;
+  &:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 12px;
+    margin: 10px auto 0 auto;
+    background: url("./assets/images/heading-separate.png");
+  }
+}

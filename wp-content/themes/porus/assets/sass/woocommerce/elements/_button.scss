@@ -1,0 +1,73 @@
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  @include button-size($height_button_wc, 40px, 12px);
+  border: solid 1px transparent;
+  white-space: nowrap;
+  @include border-radius(30px);
+  @include transition(color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out);
+  @include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent);
+  text-transform: uppercase;
+  font-weight: bold;
+  &.loading {
+    opacity: 1;
+    @include button-size($height_button_wc, 40px, 12px);
+    &:after {
+      top: 0;
+    }
+  }
+
+  &.disabled,
+  &:disabled,
+  &:disabled[disabled] {
+    @include button-size($height_button_wc, 40px, 12px);
+    @include button-variant-simple(contrast-color($color_accent), $color_accent, $color_accent);
+  }
+
+  &.alt {
+    @include button-variant-simple(contrast-color($color_secondary), $color_secondary, $color_secondary);
+    &.disabled {
+      @include button-variant-simple(contrast-color($color_secondary), $color_secondary, $color_secondary);
+    }
+  }
+
+}
+
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-message{
+  font-size: 16px;
+  .button {
+    @include button-size(32px, 14px, 10px);
+  }
+
+}
+
+
+.woocommerce a.remove {
+  font-size: 0 !important;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  &:before {
+    font-family: $font_icon;
+    font-weight: 300;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    content: '\f00d';
+    font-size: 14px;
+    @extend %text-color;
+  }
+  &:hover {
+    background-color: transparent;
+    &:before {
+      @extend %accent-text-color;
+    }
+  }
+}

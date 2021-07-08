@@ -1,0 +1,39 @@
+ul.g5blog__post-meta {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  li {
+    > * {
+      display: inline;
+    }
+    margin-right: 0;
+    &:hover {
+      @extend %accent-text-color;
+    }
+    &.meta-author {
+        span {
+          @extend %accent-text-color;
+        }
+    }
+
+    &:after {
+      content: '';
+      width: 2px;
+      height: 15px;
+      @extend %text-bg-color;
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+      top: 3px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+
+  }
+}
+

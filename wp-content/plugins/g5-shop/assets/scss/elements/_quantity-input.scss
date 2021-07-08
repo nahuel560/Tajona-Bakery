@@ -1,0 +1,40 @@
+.g5shop__quantity {
+  label {
+    font-weight: 600;
+    margin: 0;
+    width: 30%;
+  }
+  .g5shop__quantity-inner {
+    @include d-inline-flex();
+    position: relative;
+    width: 120px;
+    .qty {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      &::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+      }
+    }
+    .btn-number {
+      font-size: 14px;
+      position: absolute;
+      cursor: pointer;
+      @include d-flex();
+      width: 30px;
+      height: 100%;
+      @include align-items-center();
+      @include justify-content-center();
+      &[data-type="minus"] {
+        left: 0;
+      }
+      &[data-type="plus"] {
+        right: 0;
+      }
+    }
+  }
+
+  .stock-status {
+    margin-left: 10px;
+  }
+}

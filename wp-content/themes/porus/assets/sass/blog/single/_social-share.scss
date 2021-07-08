@@ -1,0 +1,18 @@
+.g5blog__share-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:after {
+    @extend %secondary-color;
+    @extend %secondary-border-color;
+    border: 2px solid;
+  }
+}
+ul.g5blog__share-list {
+  li {
+    @extend %heading-color;
+    &:hover {
+      @extend %accent-text-color;
+    }
+  }
+}

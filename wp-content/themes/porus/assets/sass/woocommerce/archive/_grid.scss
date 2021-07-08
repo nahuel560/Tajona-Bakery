@@ -1,0 +1,23 @@
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+	text-align: center;
+	.button,
+	.added_to_cart {
+		margin-top: 1em;
+	}
+
+	.added {
+		display: none;
+	}
+	.star-rating {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+.woocommerce .woocommerce-ordering,
+.woocommerce .woocommerce-result-count {
+	margin-bottom: 30px;
+}
+

@@ -1,0 +1,70 @@
+.woocommerce div.product.g5shop__single-product {
+  div.summary {
+    .product_title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      a {
+        color: inherit;
+      }
+    }
+
+    .woocommerce-variation-description,
+    .woocommerce-product-details__short-description {
+      margin-bottom: 1.25rem;
+    }
+
+    .g5shop__quantity {
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .price {
+      margin-bottom: 1rem;
+    }
+
+
+    .product_meta {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      > span {
+        display: block;
+        margin-bottom: 0.5rem;
+        label {
+          margin: 0 10px 0 0;
+          font-weight: 600;
+        }
+        a {
+          color: inherit;
+        }
+      }
+    }
+
+
+    .woocommerce-product-rating {
+      line-height: inherit;
+      margin-bottom: 1.5rem;
+      a {
+        color: inherit;
+      }
+    }
+
+    .g5shop__product-deal-countdown {
+      margin-bottom: 1rem;
+    }
+
+    .g5shop__product-deal-countdown-inner {
+      @include justify-content-start();
+    }
+
+    .g5shop__single-product-actions {
+      @include d-inline-flex();
+      margin: 5px 0;
+      .yith-wcwl-add-to-wishlist {
+        margin: 0 10px 0 0;
+      }
+    }
+
+
+  }
+}

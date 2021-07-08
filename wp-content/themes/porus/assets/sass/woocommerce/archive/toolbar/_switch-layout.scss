@@ -1,0 +1,18 @@
+.g5shop__switch-layout {
+  a {
+    font-size: 1rem;
+    @extend %secondary-color;
+    color: inherit;
+    &.active,
+    &:hover,
+    &:focus,
+    &:active {
+      @extend %accent-text-color;
+    }
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+  }
+}

@@ -1,0 +1,16 @@
+ul.g5shop__shop-toolbar-list {
+  list-style: none;
+  @include d-flex();
+  @include align-items-center();
+  @include flex-wrap();
+  margin: 0 !important;
+  padding: 0 !important;
+  > li {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 35px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

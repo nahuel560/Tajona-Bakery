@@ -1,0 +1,75 @@
+.content-404-wrapper {
+    text-align: center;
+    h4 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        @extend %secondary-color;
+    }
+    p {
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        a {
+            @extend %accent-text-color;
+        }
+    }
+    h2 {
+        font-size: 12rem;
+        @extend %accent-text-color;
+    }
+}
+
+.heading-404 {
+    .gel-heading-title {
+        margin-bottom: 0.4em;
+    }
+    .gel-heading-description {
+        margin-bottom: 1rem;
+    }
+}
+
+.link-404-back-home {
+    text-decoration: underline;
+}
+
+.content-404-wrapper, .search-form-404 {
+    .search-form {
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 74px;
+        label {
+            display: none;
+        }
+        .search-field {
+            width: 100%;
+            border: 2px dotted;
+            @extend %primary-border-color;
+            @include border-radius(30px);
+            padding-left: 30px;
+            padding-right: 50px;
+            height: $height__input;
+            @include input-placeholder() {
+                color: $color_text_heading;
+                font-size: $font_size_sm;
+            }
+        }
+        .search-submit {
+            background: none;
+            font-size: 0;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            margin: 0 30px;
+            &:before {
+                content: "";
+                font-family: "Font Awesome 5 Pro";
+                font-size: 1rem;
+                color: #000;
+            }
+        }
+    }
+}

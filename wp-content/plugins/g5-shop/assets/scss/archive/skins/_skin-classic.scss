@@ -1,0 +1,21 @@
+.g5shop__post-skin-classic {
+  .g5shop__product-info {
+    margin-top: 20px;
+  }
+}
+
+.g5shop__product-skin-02 {
+  .g5shop__product-info .star-rating {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .g5shop__swatch {
+    @include justify-content-center();
+  }
+
+  .woocommerce-loop-category__title {
+    text-align: center;
+  }
+}
+

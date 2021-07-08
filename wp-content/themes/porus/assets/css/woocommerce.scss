@@ -1,0 +1,37 @@
+@import "../sass/variables";
+@import "../sass/mixin";
+@import "../sass/mixin-widget";
+
+
+/* ## Elements */
+@import "../sass/woocommerce/elements/elements";
+
+/* ## Widget */
+@import "../sass/woocommerce/widget/widget";
+
+/* ## Archive */
+@import "../sass/woocommerce/archive/archive";
+
+/* ## Single */
+@import "../sass/woocommerce/single/single";
+
+
+/* ## Cart */
+@import "../sass/woocommerce/cart/cart";
+
+/* ## Checkout */
+@import "../sass/woocommerce/checkout/checkout";
+
+
+/* ## My Account */
+@import "../sass/woocommerce/my-account/my-account";
+
+/* ## Extend */
+@import "../sass/extend";
+
+
+/*
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+    background: #f7f3ee;
+    border-radius: 0 0 25px 25px;
+}*/

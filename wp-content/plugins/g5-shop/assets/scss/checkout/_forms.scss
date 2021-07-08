@@ -1,0 +1,37 @@
+.woocommerce .col2-set {
+  .col-1,
+  .col-2 {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .woocommerce .col2-set {
+    .col-2 {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.woocommerce form {
+  .form-row {
+    display: block;
+    label {
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+    textarea {
+      height: 8em;
+    }
+  }
+}
+
+.woocommerce-shipping-fields {
+  > h3 {
+    label {
+      margin: 0;
+    }
+  }
+}

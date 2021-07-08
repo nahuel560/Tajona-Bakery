@@ -1,0 +1,32 @@
+.testimonial-style-02 .testi-quote {
+    padding-bottom: 23px;
+}
+
+.gel-testimonial {
+    .author-attr h4 {
+        @extend %font-primary;
+        font-weight: 400;
+        font-size: $font_size_sm;
+        @extend %accent-text-color;
+    }
+    .gel-testimonial-job {
+        font-size: $font_size_xs;
+        @extend %heading-color;
+        font-weight: 700;
+    }
+}
+
+.testimonial-style-05 {
+    .testimonial-content {
+        padding-bottom: 22px;
+    }
+    .author-avatar {
+        padding-bottom: 14px;
+    }
+}
+
+.testimonial-style-07 {
+    .author-attr {
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,53 @@
+p.porus-mailchimp {
+    @include d-flex();
+    width: 100%;
+    input[type="email"] {
+        padding: 0 30px;
+        width: 65%;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border: 1px solid;
+        @extend %accent-border-color;
+        @include input-placeholder() {
+            color: $color_accent !important;
+        }
+    }
+    input[type="submit"] {
+        width: 35%;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        padding: 0;
+    }
+
+}
+
+.mailchimp-lg {
+    .porus-mailchimp {
+        max-width: 570px;
+        margin: 0 auto;
+        input[type="email"] {
+            width: 78%;
+        }
+        input[type="submit"] {
+            width: 22%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    p.porus-mailchimp {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .mailchimp-lg p.porus-mailchimp {
+        input[type="email"] {
+            width: 60%;
+        }
+        input[type="submit"] {
+            width: 40%;
+        }
+    }
+}

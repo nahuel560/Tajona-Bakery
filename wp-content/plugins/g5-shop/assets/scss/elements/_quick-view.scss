@@ -1,0 +1,8 @@
+#g5shop__popup-product-quick-view {
+  margin: auto;
+  width: 960px;
+  max-width: 90%;
+  padding: 1.5rem;
+  background-color: #fff;
+  @include box-shadow(0 0 15px 5px rgba(0, 0, 0, 0.1));
+}

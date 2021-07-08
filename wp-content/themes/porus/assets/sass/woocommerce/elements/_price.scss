@@ -1,0 +1,20 @@
+.woocommerce .g5shop__product-item  .g5shop__product-info .price,
+.woocommerce ul.products li.product .price {
+    font-size: 15px;
+    font-weight: bold;
+    @extend %accent-text-color;
+    ins {
+        text-decoration: none;
+    }
+    del {
+        @extend %text-color;
+        font-size: 0.8em;
+        font-weight: 400;
+        margin-right: 5px;
+        opacity: 1;
+    }
+}
+
+
+
+

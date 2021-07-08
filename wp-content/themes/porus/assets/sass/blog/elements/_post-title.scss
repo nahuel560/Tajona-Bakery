@@ -1,0 +1,7 @@
+.g5blog__post-title {
+  font-size: 36px;
+  font-weight: bold;
+  &:hover {
+    @extend %accent-text-color;
+  }
+}

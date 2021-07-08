@@ -1,0 +1,42 @@
+.g5shop__product-list-actions {
+    a.button {
+        @include button-variant-simple(contrast-color($color_secondary), $color_secondary, $color_secondary);
+    }
+
+    .g5shop__quick-view {
+        @extend %accent-bg-color;
+        @extend %accent-foreground-color;
+        &:hover,
+        &:active,
+        &:focus {
+            @extend %secondary-bg-color;
+            color: contrast-color($color_secondary);
+        }
+    }
+
+    .yith-wcwl-add-to-wishlist {
+        a {
+            @extend %accent-bg-color;
+            @extend %accent-foreground-color;
+            &:hover,
+            &:active,
+            &:focus {
+                @extend %secondary-bg-color;
+                color: contrast-color($color_secondary);
+            }
+        }
+    }
+
+    .compare {
+        @extend %accent-bg-color;
+        @extend %accent-foreground-color;
+        &:hover,
+        &:active,
+        &:focus {
+            @extend %secondary-bg-color;
+            color: contrast-color($color_secondary);
+        }
+    }
+}
+
+

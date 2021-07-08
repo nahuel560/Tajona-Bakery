@@ -1,0 +1,19 @@
+.g5shop__product-item {
+  .g5shop__product-info .price,
+  .g5shop__loop-product-cat + .g5shop__loop-product-title {
+    margin-top: 5px;
+  }
+  .g5shop__product-info .star-rating {
+    margin: 5px 0 0 0;
+  }
+
+  .g5shop__loop-product_excerpt {
+    margin-top: 15px;
+  }
+}
+
+
+
+@import "skin-classic";
+@import "skin-list";
+@import "skin-modern";

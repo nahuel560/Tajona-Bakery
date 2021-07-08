@@ -1,0 +1,228 @@
+.article-post {
+    margin-bottom: 62px;
+
+    &.page {
+        .entry-content {
+            margin-bottom: 0;
+        }
+    }
+
+    &.sticky {
+        background-color: $color_background_post_sticky;
+        padding: 2rem;
+    }
+    .entry-header {
+        text-align: left;
+    }
+
+    .entry-footer {
+        @include d-flex;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-align: left;
+        .link-more {
+            margin-bottom: 0;
+        }
+        .link-more > a {
+            text-transform: uppercase;
+            @extend %heading-color;
+
+            &:before {
+                @include pseudo($display: inline-block, $pos: relative);
+                vertical-align: middle;
+                margin-right: 0.25rem;
+                border-top: solid 1px currentColor;
+                width: 2rem;
+                color: inherit;
+            }
+            &:hover {
+                @extend %accent-text-color;
+            }
+        }
+        .meta-comment {
+            margin-left: auto;
+
+            a {
+                text-transform: uppercase;
+                color: inherit;
+
+                &:hover {
+                    @extend %accent-text-color;
+                }
+            }
+        }
+    }
+
+    .post-thumbnail {
+        margin-bottom: 22px;
+    }
+
+
+
+    .entry-title {
+        font-size: 36px;
+        font-weight: bold;
+        word-break: break-word;
+        margin-bottom: 10px;
+        a {
+            color: inherit;
+
+            &:hover {
+                @extend %accent-text-color;
+            }
+        }
+    }
+
+    .entry-meta {
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        a {
+            color: inherit;
+            &:hover {
+                @extend %accent-text-color;
+            }
+        }
+
+        li {
+            display: inline;
+            i{
+                padding-right: 5px;
+            }
+        }
+
+        li:not(:last-child) {
+            border-right: 2px solid;
+            @extend %text-border-color;
+            margin-right: 10px;
+            padding-right: 10px;
+        }
+
+        .meta-author {
+            .title-meta-author {
+                @extend %accent-text-color;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .entry-header + .entry-content,
+    .entry-header + .entry-excerpt {
+        margin-top: 27px;
+    }
+
+    .post-tags {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        a {
+            display: inline-block;
+            @extend %secondary-color;
+            &:hover {
+                @extend %primary-color;
+            }
+        }
+
+        span {
+            margin-right: 20px;
+        }
+    }
+
+}
+
+#main-content .article-post:last-child {
+    margin-bottom: 0;
+}
+body.page {
+    .article-post {
+        margin-bottom: 0;
+    }
+}
+
+.entry-excerpt {
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.entry-content {
+    margin-bottom: 1.5rem;
+
+    @extend %clearfix;
+
+
+    h1, h2, h3, h4, h5, h6 {
+         margin-top: 2rem;
+     }
+    h1, h2, h3, h4, h5, h6 {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    > p:last-child,
+    > ul:last-child {
+        margin-bottom: 0;
+    }
+}
+
+body.single-post {
+    .article-post .entry-title {
+        font-size: 48px;
+    }
+}
+
+.author-info-wrap {
+    margin-top: 70px;
+}
+
+
+
+.author-info-inner {
+    @include d-flex;
+}
+
+.author-info-avatar {
+    width: 80px;
+    margin-right: 1rem;
+    @include flex-shrink-0;
+
+    img {
+        @include border-radius(100%);
+    }
+}
+
+.author-info-content {
+    .name {
+        font-size: 1rem;
+        text-transform: uppercase;
+        a {
+            color: inherit;
+        }
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+}
+
+.site-search-results-not-found {
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .search-form {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@include media-xs() {
+
+}

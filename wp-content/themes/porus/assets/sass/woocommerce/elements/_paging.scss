@@ -1,0 +1,31 @@
+.woocommerce nav.woocommerce-pagination {
+	ul.page-numbers {
+		border: none;
+		margin: 0;
+		li {
+			border: none;
+			margin-right: 15px;
+			&:last-child {
+				margin-right: 0;
+			}
+			a,
+			span {
+				padding: 0;
+				line-height: 48px;
+				font-size: 16px;
+				min-width: 0;
+
+			}
+			span.current,
+			a:hover {
+				@extend %accent-bg-color;
+				color: #fff;
+			}
+
+			.prev,
+			.next {
+				font-size: 0;
+			}
+		}
+	}
+}

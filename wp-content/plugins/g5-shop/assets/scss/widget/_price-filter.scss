@@ -1,0 +1,30 @@
+.woocommerce .widget_price_filter .price_slider_amount .button {
+  font-size: 14px;
+  float: right;
+  background-color: transparent;
+  padding: 0;
+  line-height: 24px;
+  height: auto;
+  margin: 0;
+  text-transform: uppercase;
+  border: none;
+  &:before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f0b0";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 900;
+    margin-right: 5px;
+  }
+}
+
+.woocommerce .widget_price_filter .price_slider_amount {
+  text-align: left;
+  .price_label {
+    font-size: 14px;
+  }
+}

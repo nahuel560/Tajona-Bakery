@@ -1,0 +1,13 @@
+.g5blog__layout-medium-image {
+  .g5blog__post-default {
+    padding-bottom: 45px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  .g5core__paging {
+    margin-top: 45px;
+  }
+
+}
+

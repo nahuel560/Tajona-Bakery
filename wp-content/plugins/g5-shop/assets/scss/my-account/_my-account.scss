@@ -1,0 +1,116 @@
+.woocommerce-MyAccount-navigation {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      &:last-of-type {
+        border-bottom: none;
+      }
+      > a {
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        padding: 14px 20px;
+        font-size: 0.875rem;
+        &:after {
+          font-family: 'Font Awesome 5 Pro';
+          font-size: 20px;
+          position: absolute;
+          right: 20px;
+
+          line-height: 1;
+          font-weight: 300;
+          text-transform: none;
+        }
+      }
+      &.is-active > a,
+      a:hover{
+        background-color: #fafafa;
+      }
+
+      &.woocommerce-MyAccount-navigation-link--dashboard {
+        > a:after {
+          content: "\f015";
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--orders {
+        > a:after {
+          content: "\f733";
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--downloads {
+        > a:after {
+          content: "\f019";
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--edit-address {
+        > a:after {
+          content: "\f3c5";
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--edit-account {
+        > a:after {
+          content: "\f406";
+        }
+      }
+
+      &.woocommerce-MyAccount-navigation-link--customer-logout {
+        > a:after {
+          content: "\f2f5";
+        }
+      }
+
+    }
+  }
+}
+
+.woocommerce-MyAccount-content {
+  > p:not(.woocommerce-info) {
+    padding: 20px;
+    background-color: #fafafa;
+    a {
+      color: inherit;
+    }
+  }
+
+  address {
+    font-style: italic;
+    padding: 20px;
+  }
+
+  fieldset {
+    padding: 20px 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    legend {
+      width: auto;
+      padding: 0 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.woocommerce-Address-title {
+  margin-top: 3rem;
+  a {
+    color: inherit;
+  }
+}
+
+@media (max-width: 991px) {
+  .woocommerce-account .woocommerce-MyAccount-content,
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 100%;
+  }
+
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    margin-bottom: 2rem;
+  }
+}

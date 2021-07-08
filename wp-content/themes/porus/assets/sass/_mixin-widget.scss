@@ -1,0 +1,150 @@
+@mixin widget-archive() {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+
+    li {
+        position: relative;
+        > a {
+            @extend %secondary-color;
+            display: inline-block;
+            padding: 0.5rem 0 0.5rem 15px;
+            //position: relative;
+            line-height: 20px;
+            min-height: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+
+            &:hover {
+                @extend %accent-text-color;
+            }
+            &:before {
+                font-family: $font_icon;
+                content: '\f054';
+                font-weight: 400;
+                position: absolute;
+                left: 0;
+                top: 8px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .current_page_ancestor,
+    .current_page_parent,
+    .current-cat-parent,
+    .current-cat-ancestor {
+        > ul {
+            display: block;
+        }
+    }
+    .current-cat {
+        > a {
+            @extend %accent-text-color;
+        }
+    }
+
+    ul.children,
+    ul.sub-menu {
+        list-style: none;
+        padding: 0 0 0 15px;
+        margin: 0;
+        li {
+            > a {
+                text-transform: none;
+                &:before {
+                    font-size: 8px;
+                    top: 8px;
+                }
+            }
+        }
+    }
+}
+
+@mixin widget-meta() {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    .children {
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+
+    li {
+        padding: .5rem 0;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    a {
+        color: inherit;
+        &:hover {
+            @extend %accent-text-color;
+        }
+    }
+}
+
+@mixin widget-search() {
+    @include d-flex();
+    position: relative;
+    label {
+        display: none;
+    }
+    button {
+        padding: 0 18px;
+        position: absolute;
+        right: 0;
+        background: transparent;
+        color: inherit;
+        border: 0;
+        font-size: 0;
+        &:before {
+            content: '\f002';
+            font-family: $font_icon;
+            font-size: 16px;
+            @extend %heading-color;
+        }
+        > span {
+            display: none;
+        }
+    }
+
+    input {
+        @include flex-fill;
+        padding-right: 40px;
+        &:focus {
+            + button {
+                &:before {
+                    @extend %primary-color;
+                }
+            }
+        }
+    }
+}
+
+@mixin widget-tag() {
+    a {
+        font-size: 12px !important;
+        display: inline-block;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        padding-right: 5px;
+        margin-bottom: 0.3rem;
+        @extend %secondary-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:hover {
+            @extend %primary-color;
+        }
+    }
+    li:not(:last-child) a {
+        &:after {
+            content: ',';
+        }
+    }
+}

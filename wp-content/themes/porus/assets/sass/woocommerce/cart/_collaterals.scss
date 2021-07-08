@@ -1,0 +1,122 @@
+.woocommerce .cart-collaterals .cross-sells {
+    > h2 {
+        @extend %font-primary;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 50px;
+        &:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 12px;
+            margin: 10px auto 0 auto;
+            background: url("../images/heading-separate.png");
+        }
+    }
+}
+
+.woocommerce .cart-collaterals {
+    .cart_totals,
+    .cross-sells {
+        margin-top: 3rem;
+    }
+
+    .wc-proceed-to-checkout {
+        padding: 35px 0 0 0;
+        a.checkout-button {
+            @include button-size($height__input, 30px, 12px);
+        }
+    }
+
+    .cart_totals {
+        background-color: #f6f2e9;
+        padding: 30px 40px;
+        @include border-radius(20px);
+
+        h2 {
+            font-size: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        table.shop_table {
+
+            tr {
+                th,td {
+                    border-top-width: 0;
+                }
+
+                th {
+                    font-size: 14px;
+                    padding-left: 0;
+                }
+
+                td {
+                    text-align: left;
+                    font-size: 16px;
+                    @extend %heading-color;
+                }
+            }
+
+            tr.tax-rate,
+            tr.cart-subtotal {
+                td {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+
+            tr.tax-rate {
+                small {
+                    text-transform: none;
+                    font-size: 13px;
+                }
+            }
+
+            tr.order-total {
+                th,td {
+                    border-top-color: #e1e1e1;
+                    border-top-width: 1px;
+                    padding-top: 20px;
+                }
+                th {
+                    @extend %heading-color;
+                }
+                td {
+                    font-size: 30px;
+                    @extend %accent-text-color;
+                }
+            }
+
+            .shipping-calculator-button {
+                color: inherit;
+            }
+
+            ul#shipping_method li input {
+                margin-top: 6px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .woocommerce .cart-collaterals,
+    .woocommerce-page .cart-collaterals {
+        @include d-flex();
+        @include flex-column();
+        .cross-sells {
+            order: 1;
+        }
+
+
+        .cart_totals {
+            table {
+                tr:nth-child(2n) td {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

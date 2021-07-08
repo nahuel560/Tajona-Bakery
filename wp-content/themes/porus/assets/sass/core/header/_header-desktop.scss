@@ -1,0 +1,28 @@
+.g5core-site-branding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  &.logo-left {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &.logo-right {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &.logo-center {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+.menu-horizontal {
+  &.x-nav-menu {
+    > .menu-item {
+      + .menu-item {
+        margin-left: 35px;
+      }
+    }
+  }
+}
